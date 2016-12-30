@@ -1,5 +1,7 @@
 $(document).ready(function () {
     
+    //test for git
+
     $(".main__nav-el-has-subnav").on("click",function () {
         var self = $(this);
         if(self.hasClass("close_state")){
