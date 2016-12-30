@@ -1,0 +1,101 @@
+//= templates/header.html
+    <section class="content-head">
+        <div class="content-head__inner basic_width">
+            <h1 class="content-head__title h1_title">
+                 Что с моим заказом?
+            </h1>
+            //= templates/bread-crumbs.html
+        </div>
+    </section>
+    <div class="main-content">
+        <div class="basic_width clearfix_">
+            <div class="user-form fl_l">
+                <div class="user-form__title">
+                    Проверить статус заказа самовывоза из шинного центра
+                </div>
+                <div class="user-form__content">
+                    <form action="" method="post">
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    Шинный центр<span class="blue_text">*</span>
+                                </span>
+                                <select class="form__field form__select">
+                                    <option disabled selected>Выберите шинный центр</option>
+                                    <option>Выберите шинный центр 1</option>
+                                    <option>Выберите шинный центр 2</option>
+                                </select>
+                            </label>
+                            <span class="field__annotation">
+                                Пожалуйста, выберите шинный центр в котором оформлялся заказ на самовывоз.
+                            </span>
+                        </div>
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    Номер заказа<span class="blue_text">*</span>
+                                </span>
+                                <input class="form__field" type="text" placeholder="Введите номер">
+                            </label>
+                            <span class="field__annotation">
+                                Введите последние 5 цифр номера заказа
+                            </span>
+                        </div>
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    Телефон<span class="blue_text">*</span>
+                                </span>
+                                <input type="text" class="form__field phone-mask">
+                            </label>
+                        </div>
+                        <div class="submit__btn-wrap">
+                            <div class="btn__wrap btn_red_theme">
+                                <input type="submit" class="btn" value="Проверить статус">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="user-form fl_r">
+                <div class="user-form__title">
+                    Форма обратной связи
+                </div>
+                <div class="user-form__content">
+                    <form action="" method="post">
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    Имя
+                                </span>
+                                <input class="form__field" type="text" placeholder="Введите имя">
+                            </label>
+                        </div>
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    Телефон<span class="blue_text">*</span>
+                                </span>
+                                <input type="text" class="form__field phone-mask">
+                            </label>
+                        </div>
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    Текст вопроса<span class="blue_text">*</span>
+                                </span>
+                                <textarea class="form__field form__textarea" placeholder="Введите сообщение"></textarea>
+                            </label>
+                        </div>
+                        <div class="submit__btn-wrap">
+                            <div class="btn__wrap btn_red_theme">
+                                <input type="submit" class="btn" value="Отправить">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+//= templates/footer.html

@@ -1,0 +1,90 @@
+//= templates/header.html
+    <section class="content-head">
+        <div class="content-head__inner basic_width">
+            <h1 class="content-head__title h1_title">
+                 Заголовок
+            </h1>
+            //= templates/bread-crumbs.html
+        </div>
+    </section>
+    <div class="main-content">
+        <!------ Content ------>
+
+        <!------
+            Классы:
+                basic_width - ширина 1130px
+                clearfix_ - все понятно надеюсь
+                title  - заголовки (по дефолту стоит размер шрифта 1.5rem)
+
+            Кастомные шрифты:
+                font-family: 'OpenSans-Light';
+                font-family: 'OpenSans-Regular';
+                font-family: 'OpenSans-Semibold';
+                font-family: 'OpenSans-Bold';
+        ------>
+
+        <!-----
+            Звезды рейтинга:
+
+                <div class="rating" data-rating-value = "4">
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                Размер звезд задается через font-size
+        ----->
+
+        <!-----
+            Пагинация:
+
+                <div class="pagination pagination_catalog-indent clearfix_">
+                    <div class="pagination-inner">
+                        <div class="pagination-wrap">
+                            <ul class="pagination__list">
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">1</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">2</a>
+                                </li>
+                                <li class="pagination__item pagination__item-active">
+                                    <a href="#" class="pagination__link">3</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">4</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">5</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">...</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">12</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pagination-btns">
+                            <a href="#" class="pagination__btn">назад</a>
+                            <a href="#" class="pagination__btn">вперед</a>
+                        </div>
+                    </div>
+                </div>
+        ------>
+
+        <!-----
+            Кнопка/ссылка в виде кнопки (красная):
+
+                <div class="btn__wrap btn_red_theme">
+                    <a href="" class="btn">Кнопка</a>
+                </div>
+
+                Поменять цвет кнопки -> убрать модификатор btn_red_theme и написать свой
+        ------>
+    </div>
+//= templates/footer.html

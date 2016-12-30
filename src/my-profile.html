@@ -1,0 +1,102 @@
+//= templates/header.html
+    <section class="content-head">
+        <div class="content-head__inner basic_width">
+            <h1 class="content-head__title h1_title">
+                мой профиль
+            </h1>
+            //= templates/bread-crumbs.html
+        </div>
+    </section>
+    <div class="main-content">
+        <div class="basic_width clearfix_">
+            <aside class="sidebar fl_l">
+                <ul class="user-nav">
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">a. <span class="dash-indent">&mdash;</span> Личные данные</a>
+                    </li>
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">b. <span class="dash-indent">&mdash;</span> Мои заказы</a>
+                    </li>
+                    <li class="user-nav__item user-nav__item-active">
+                        <a class="user-nav__link" href="#">c. <span class="dash-indent">&mdash;</span> Моя корзина</a>
+                    </li>
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">d. <span class="dash-indent">&mdash;</span> История заказов</a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="content__section fl_r">
+                <div class="clearfix_">
+                    <div class="profile__image-wrap">
+                        <div class="profile__image">
+                            <img src="assets/images/user.png" alt="" />
+                        </div>
+                        <form action="" method="post" class="profile__image-upload">
+                            <label class="custom-input-file">
+                                <span class="custom-input-file-wrap">
+                                    <input type="file" name="profile-image">
+                                    <span class="btn__wrap btn_red_theme d_b">
+                                        <span class="btn">Выберите файл</span>
+                                    </span>
+                                    <span class="custom-input-file__text">Файл не выбран</span>
+                                </span>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="profile__info-wrap theme_yel-bord">
+                        <div class="profile__info">
+                            <div class="profile__info-item">
+                                <span class="profile__info-field-title">
+                                    Фамилия:
+                                </span>
+                                <span class="profile__info-field-value" data-value="Иванов">
+                                    Иванов
+                                </span>
+                            </div>
+                            <div class="profile__info-item">
+                                <span class="profile__info-field-title">
+                                    Имя:
+                                </span>
+                                <span class="profile__info-field-value" data-value="Иван">
+                                    Иван
+                                </span>
+                            </div>
+                            <div class="profile__info-item">
+                                <span class="profile__info-field-title">
+                                    Отчество:
+                                </span>
+                                <span class="profile__info-field-value" data-value="Иванович">
+                                    Иванович
+                                </span>
+                            </div>
+                            <div class="profile__info-item">
+                                <span class="profile__info-field-title">
+                                    Телефон:
+                                </span>
+                                <span class="profile__info-field-value" data-value="+375 (29) 777-77-77">
+                                    +375 (29) 777-77-77
+                                </span>
+                            </div>
+                            <div class="profile__info-item">
+                                <span class="profile__info-field-title">
+                                    Email:
+                                </span>
+                                <span class="profile__info-field-value profile__info-field-disable">
+                                    name@company.by
+                                </span>
+                            </div>
+                            <div class="profile__info-item">
+                                <span class="profile__info-field-title">
+                                    Пароль:
+                                </span>
+                                <span class="profile__info-field-value profile__info-field-disable">
+                                    ******
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+//= templates/footer.html

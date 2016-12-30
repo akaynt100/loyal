@@ -1,0 +1,145 @@
+//= templates/header.html
+    <section class="content-head">
+        <div class="content-head__inner basic_width">
+            <h1 class="content-head__title h1_title">
+                моя корзина
+            </h1>
+            //= templates/bread-crumbs.html
+        </div>
+    </section>
+    <div class="main-content">
+        <div class="basic_width clearfix_">
+            <aside class="sidebar fl_l">
+                <ul class="user-nav">
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">a. <span class="dash-indent">&mdash;</span> Личные данные</a>
+                    </li>
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">b. <span class="dash-indent">&mdash;</span> Мои заказы</a>
+                    </li>
+                    <li class="user-nav__item user-nav__item-active">
+                        <a class="user-nav__link" href="#">c. <span class="dash-indent">&mdash;</span> Моя корзина</a>
+                    </li>
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">d. <span class="dash-indent">&mdash;</span> История заказов</a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="content__section fl_r">
+                <div class="cart-top-btns clearfix_">
+                    <a href="" class="cart-top__btn cart-top__btn_active">Посмотреть все заказы</a>
+                    <a href="#" class="cart-top__btn">Посмотреть историю заказов</a>
+                </div>
+                <div class="orders-wrap">
+                    <div class="orders">
+                        <div class="order">
+                            <div class="orders__table-row orders__table-titles flex_row">
+                                <div class="order__item-title">
+                                    Заказ № <span class="bold">4</span> от 10.08.2017
+                                </div>
+                                <div class="order__item-more">
+                                    <a href="" class="order__item-more-link">Подробнее о заказе</a>
+                                </div>
+                            </div>
+                            <div class="orders__table-row flex_row align_start">
+                                <div class="order__info">
+                                    <div class="order__info-item">
+                                        Сумма к оплате: <span class="bold">1 899 руб.</span>
+                                    </div>
+                                    <div class="order__info-item">
+                                        Оплачен: <span class="dark_text">Да</span>
+                                    </div>
+                                    <div class="order__info-item">
+                                        Способ оплаты: <span class="dark_text">Наличные курьеру</span>
+                                    </div>
+                                    <div class="order__info-item">
+                                        Доставка: <span class="dark_text">Без доставки</span>
+                                    </div>
+                                    <div class="order__info-item">
+                                        Состав заказа:
+                                    </div>
+                                    <ul class="order__composition">
+                                        <li class="order__composition-item">
+                                            1. <a href="" class="order__composition-link">NOKIAN HAKKA GREEN 2</a> — 10 шт.
+                                        </li>
+                                        <li class="order__composition-item">
+                                            2. <a href="" class="order__composition-link">NOKIAN HAKKA GREEN 2</a> — 10 шт.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="order__actions">
+                                    <div class="order__date">
+                                        <time>10.08.2017</time>
+                                    </div>
+                                    <div class="order__status order__status_accepted">Принят, ожидается оплата</div>
+                                    <div class="order__actions-btns flex_row">
+                                        <div class="btn__wrap btn_white_theme">
+                                            <a href="" class="btn">Отменить заказ</a>
+                                        </div>
+                                        <div class="btn__wrap btn_red_theme">
+                                            <a href="" class="btn">Повторить заказ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orders__group-title">
+                            Заказы в статусе «Отменен»
+                        </div>
+                        <div class="order">
+                            <div class="orders__table-row orders__table-titles flex_row">
+                                <div class="order__item-title">
+                                    Заказ № <span class="bold">4</span> от 10.08.2017
+                                </div>
+                                <div class="order__item-more">
+                                    <a href="" class="order__item-more-link">Подробнее о заказе</a>
+                                </div>
+                            </div>
+                            <div class="orders__table-row flex_row align_start">
+                                <div class="order__info">
+                                    <div class="order__info-item">
+                                        Сумма к оплате: <span class="bold">1 899 руб.</span>
+                                    </div>
+                                    <div class="order__info-item">
+                                        Оплачен: <span class="dark_text">Да</span>
+                                    </div>
+                                    <div class="order__info-item">
+                                        Способ оплаты: <span class="dark_text">Наличные курьеру</span>
+                                    </div>
+                                    <div class="order__info-item">
+                                        Доставка: <span class="dark_text">Без доставки</span>
+                                    </div>
+                                    <div class="order__info-item">
+                                        Состав заказа:
+                                    </div>
+                                    <ul class="order__composition">
+                                        <li class="order__composition-item">
+                                            1. <a href="" class="order__composition-link">NOKIAN HAKKA GREEN 2</a> — 10 шт.
+                                        </li>
+                                        <li class="order__composition-item">
+                                            2. <a href="" class="order__composition-link">NOKIAN HAKKA GREEN 2</a> — 10 шт.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="order__actions">
+                                    <div class="order__date">
+                                        <time>10.08.2017</time>
+                                    </div>
+                                    <div class="order__status order__status_dispatch">Принят, формируется к отправке</div>
+                                    <div class="order__actions-btns flex_row">
+                                        <div class="btn__wrap btn_white_theme">
+                                            <a href="" class="btn">Отменить заказ</a>
+                                        </div>
+                                        <div class="btn__wrap btn_red_theme">
+                                            <a href="" class="btn">Повторить заказ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+//= templates/footer.html

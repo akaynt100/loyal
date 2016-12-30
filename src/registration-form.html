@@ -1,0 +1,124 @@
+//= templates/header.html
+    <section class="content-head">
+        <div class="content-head__inner basic_width">
+            <h1 class="content-head__title h1_title">
+                регистрация Для оптовых клиентов
+            </h1>
+            //= templates/bread-crumbs.html
+        </div>
+    </section>
+    <div class="main-content">
+        <div class="basic_width">
+            <div class="user-form registration-form">
+                <div class="user-form__title">
+                    Форма регистрации
+                </div>
+                <div class="user-form__content">
+                    <form action="" method="post">
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    Электронная почта<span class="blue_text">*</span>
+                                </span>
+                                <input class="form__field" type="text" placeholder="Введите ваш email">
+                            </label>
+                            <span class="field__annotation">
+                                укажите тот адрес электронной почты, к которому вы имеете доступ в будущем этот адрес будет являться Вашим логином для входа в систему
+                            </span>
+                        </div>
+                        <div class="field__wrap">
+                            <div class="clearfix_">
+                                <label class="field__label field__label-for-pass">
+                                    <span class="field__title">
+                                        Введите пароль<span class="blue_text">*</span>
+                                    </span>
+                                    <input class="form__field" type="password" placeholder="Введите пароль">
+                                </label>
+                                <label class="field__label field__label-for-pass">
+                                    <span class="field__title">
+                                        Повторите пароль<span class="blue_text">*</span>
+                                    </span>
+                                    <input class="form__field" type="password" placeholder="Повторите пароль">
+                                </label>
+                            </div>
+                            <span class="field__annotation">
+                                не менее 6 символов
+                            </span>
+                        </div>
+
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    Наименование организации<span class="blue_text">*</span>
+                                </span>
+                                <input class="form__field" type="text" placeholder="Введите Наименование организации">
+                            </label>
+                        </div>
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    УНП<span class="blue_text">*</span>
+                                </span>
+                                <input class="form__field" type="text" placeholder="Введите УНП">
+                            </label>
+                        </div>
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    Юридический адрес<span class="blue_text">*</span>
+                                </span>
+                                <input class="form__field" type="text" placeholder="Почтовый индекс, город, адрес">
+                            </label>
+                        </div>
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    Почтовый адрес
+                                </span>
+                                <input class="form__field" type="text" placeholder="Почтовый индекс, город, адрес">
+                            </label>
+                        </div>
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    ФИО директора
+                                </span>
+                                <input class="form__field" type="text" placeholder="Введите ФИО">
+                            </label>
+                        </div>
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    Банковские реквизиты
+                                </span>
+                                <input class="form__field" type="text" placeholder="Введите реквизиты">
+                            </label>
+                        </div>
+                        <div class="field__wrap">
+                            <div class="fields">
+                                <label class="field__label field__for-cloning">
+                                    <span class="field__title">
+                                        Телефон компании<span class="blue_text">*</span>
+                                    </span>
+                                    <input type="text" class="form__field phone-mask">
+                                </label>
+                            </div>
+                            <div>
+                                <a href="" class="add_phone-to-field">
+                                    Добавить дополнительный телефон
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="submit__btn-wrap">
+                            <div class="btn__wrap btn_red_theme">
+                                <input type="submit" class="btn" value="Проверить статус">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+//= templates/footer.html
