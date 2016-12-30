@@ -95,6 +95,9 @@ gulp.task('build', [
     'fonts:build',
     'image:build'
 ]);
+//test
+
+
 
 gulp.task('watch', function(){
     watch([path.watch.html], function(event, cb) {
