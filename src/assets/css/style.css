@@ -163,6 +163,7 @@ article {
     padding-bottom: 48.4%; /*56.25% - 16:9*/ /*4:3 — 75%*/
     margin-top: -2px;
     margin-right: 2px;
+    margin-bottom: -7px;
 }
 
 .video iframe {
@@ -258,10 +259,6 @@ article {
 .btnMain {
     margin-left: 21px;
     margin-right: 17px;
-}
-
-.notFound .main-content {
-    margin-bottom: 0;
 }
 
 
@@ -409,12 +406,12 @@ article {
     visibility: visible;
 }
 
-.comments .articlesPagination {
+.comments.articlesPagination {
     margin-top: 37px;
     margin-bottom: 30px;
 }
 
-.comments .center {
+.comments.center {
     text-align: center;
     margin-right: 3px;
 }
@@ -575,7 +572,7 @@ article {
 
 
 /* - - - - - - - - - - - - - about - - - - - - - - - - - -*/
-.about article {
+.about {
     margin-bottom: -1px;
 }
 
@@ -842,7 +839,7 @@ article {
 
 
 /* - - - - - - - - - - - - - reviewMore - - - - - - - - - - - -*/
-.reviewMore article {
+.reviewMore {
     margin-top: 14px;
     padding-right: 3.539823008849558%; /* 40/1130 */
 }
