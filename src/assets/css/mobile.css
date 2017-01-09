@@ -1,0 +1,218 @@
+/* - - - - - - - - - - - - - desktop - - - - - - - - - - - -*/
+.accordion__phone, .logo-mobile {
+    display: none;
+}
+
+
+
+
+/* - - - - - - - - - - - - - global - - - - - - - - - - - -*/
+@media all and (max-width: 320px) {
+.basic_width {
+    max-width: 280px;
+}
+
+.wrapper {
+    min-width: 320px;
+}
+
+.flex_mobile_column {
+    flex-direction: column;
+}
+
+.mobile-fl_r {
+    float: right;
+}
+
+.mobile-fl_l {
+    float: left;
+}
+
+.accordion__phone, .logo-mobile {
+    display: block;
+}
+
+
+/* - - - - - - - - - - - - - header - - - - - - - - - - - -*/
+.header__top {
+    display: none;
+}
+
+.logo__wrap {
+    display: none;
+}
+
+.logo-mobile {
+    display: block;
+    margin: 0 auto;
+    padding-right: 5px;
+}
+
+.header__middle {
+    padding-top: 13px;
+    padding-bottom: 11px;
+}
+
+.header__phone {
+    display: none;
+}
+
+.header__phones {
+    background-image: none;
+    margin: 0;
+    padding-left: 17px;
+}
+
+.header__phone-mobile {
+    margin-bottom: 4px;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: OpenSans-Bold;
+    color: #000;
+}
+
+.header__work-time {
+    display: none;
+}
+
+.header__cart {
+    display: none;
+}
+
+.accordion__phone {
+    padding-left: 54px;
+}
+
+.accordion__phone label {
+    position: relative;
+}
+
+.accordion__phone label:before {
+    position: absolute;
+    content: "\1F783";
+    right: 50px;
+    color: #000;
+    font-size: 16px;
+    line-height: 10px;
+}
+
+.accordion__phone > :not(input):not(label) {
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+    transition: .5s;
+}
+.accordion__phone > label {
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+}
+
+.accordion__phone > :checked + label + div {
+    overflow: hidden;
+    height: 60px;
+}
+
+.accordion__phone > :checked + label:before {
+    content: "\1F781";
+    line-height: 21px;
+}
+
+
+
+/* - - - - - - - - - - - - - nav - - - - - - - - - - - -*/
+.search__form {
+    display: none;
+}
+
+.main__nav-el-has-subnav {
+    width: 34px;
+    margin-left: 2px;
+}
+
+.main__nav-el-has-subnav, .nav__burger {
+    height: 48px;
+    background-color: transparent;
+}
+
+.main__nav-el:not(.main__nav-el-has-subnav) {
+    display: none;
+}
+
+.main-slider__el .slider__img  {
+    display: none;
+}
+
+
+
+/* - - - - - - - - - - - - - content - - - - - - - - - - - -*/
+.advantages {
+    display: none;
+}
+
+.slider-wrap {
+    display: none;
+}
+
+.services-banners {
+    position: static;
+    margin: 24px auto ;
+}
+
+.services__banner {
+    width: 100%;
+    height: 72px;
+    margin-bottom: 12px;
+    line-height: 18px;
+    padding-left: 89px;
+    padding-right: 100px;
+    padding-top: 18px;
+}
+
+.services__banner:last-of-type {
+    margin-bottom: 0;
+}
+
+.services__banner_tires, .services__banner_wheels {
+    background-size: 17.2%;
+    background-position: 8.8% 50%;
+}
+
+.services__banner_sewing {
+    background-size: 17.2%;
+    background-position: 8.8% 38%;
+}
+
+
+
+
+
+.user-panel {
+    /*max-width: 320px;*/
+    display: none;
+}
+
+
+
+
+
+/*footer {*/
+    /*display: none;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
