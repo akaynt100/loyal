@@ -1,6 +1,4 @@
 $(document).ready(function () {
-    
-    //test for git
 
     $(".main__nav-el-has-subnav").on("click",function () {
         var self = $(this);
@@ -178,3 +176,50 @@ function findParent(el,class_){
         return findParent(parent,class_);
     }
 }
+
+
+//sliders
+$('.sliderBrand').slick({
+    arrows: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    draggable: true,
+    nextArrow: '<div class="rightArrow"></div>',
+    prevArrow: '<div class="leftArrow"></div>'
+});
+
+$('.sliderSertificates').slick({
+    arrows: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    draggable: true,
+    nextArrow: '<div class="rightArrow"></div>',
+    prevArrow: '<div class="leftArrow"></div>'
+});
+
+$(window).resize(function(){
+    var winBr = $('.basic_width').width();
+    if( winBr <= 320 ){
+        $('.catalog').slick({
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            draggable: true,
+            nextArrow: '<div class="rightArrow"></div>',
+            prevArrow: '<div class="leftArrow"></div>'
+        });
+    } else {
+        $('.catalog').unslick();
+    }
+});
+
+// ***** remove this *******
+$('.catalog').slick({
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+    nextArrow: '<div class="rightCatalogArrow"></div>',
+    prevArrow: '<div class="leftCatalogArrow"></div>'
+});
+//**********************************************

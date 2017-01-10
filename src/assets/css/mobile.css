@@ -1,5 +1,6 @@
 /* - - - - - - - - - - - - - desktop - - - - - - - - - - - -*/
-.accordion__phone, .logo-mobile, .main__nav-el-mobile, .nav__mobile-block {
+.accordion__phone, .logo-mobile, .main__nav-el-mobile, .nav__mobile-block,
+.links__mobile {
     display: none;
 }
 
@@ -7,6 +8,7 @@
 /*@media all and (max-width: 320px) {*/
 .basic_width {
     max-width: 280px;
+    width: 280px;
 }
 
 .wrapper {
@@ -27,6 +29,10 @@
 
 .accordion__phone, .logo-mobile {
     display: block;
+}
+
+.mobile-none {
+    display: none;
 }
 
 /* - - - - - - - - - - - - - header - - - - - - - - - - - -*/
@@ -236,13 +242,71 @@
 .catalog {
     display: block;
 }
+
 .catalog__el {
     width: 100%;
+    margin: 0;
+}
+
+.catalog__el:hover .product__addition {
+    display: none;
 }
 
 .product__price-before-discount {
     display: none;
 }
+
+.main_p_switcher_indent {
+    margin-top: 33px;
+    margin-left: 33px;
+    margin-bottom: 20px;
+}
+
+.product__title {
+    font-size: 0.875rem;
+    color: #636363
+}
+
+.slick-slide {
+    min-width: 280px!important;
+}
+
+.slick-track {
+    min-width: 6000px;
+}
+
+.rightCatalogArrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15px;
+    height: 100%;
+}
+
+.leftCatalogArrow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 100%;
+    z-index: 10;
+}
+
+.rightCatalogArrow:hover, .leftCatalogArrow:hover {
+    cursor: pointer;
+}
+
+.links__mobile {
+    display: block;
+}
+
+.links__mobile a {
+    margin-top: 30px;
+}
+
+/*.links a:not(:first-child) {*/
+    /*margin-left: 20px;*/
+/*}*/
 
 /******************************************************/
 .user-panel {
