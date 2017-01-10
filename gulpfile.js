@@ -10,8 +10,8 @@ var gulp = require('gulp'),
     pngquant = require('imagemin-pngquant'),
     rigger = require('gulp-rigger'),
     rimraf = require('rimraf'),
-    liveServer = require("live-server"),
-    browserSync = require('browser-sync').create();
+    liveServer = require("live-server");
+    //browserSync = require('browser-sync').create();
 
 var path = {
     build: {
@@ -126,14 +126,14 @@ gulp.task('clean', function (cb) {
     rimraf(path.clean, cb);
 });
 
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: {
-            baseDir: "build/"
-        },
-        //"other page"
-    });
-});
+//gulp.task('browser-sync', function() {
+//    browserSync.init({
+//        server: {
+//            baseDir: "build/"
+//        },
+//        //"other page"
+//    });
+//});
 
 //gulp.task('default', ['build', 'watch', 'browser-sync']);
 gulp.task('default', ['build', 'webserver', 'watch']);

@@ -4,7 +4,7 @@
 }
 
 /* - - - - - - - - - - - - - global - - - - - - - - - - - -*/
-@media all and (max-width: 320px) {
+/*@media all and (max-width: 320px) {*/
 .basic_width {
     max-width: 280px;
 }
@@ -230,10 +230,24 @@
     margin-bottom: 47px;
 }
 
+
+
+/* - - - - - - - - - - - - - catalog-wrap - - - - - - - - - - - -*/
+.catalog {
+    display: block;
+}
+.catalog__el {
+    width: 100%;
+}
+
+.product__price-before-discount {
+    display: none;
+}
+
 /******************************************************/
 .user-panel {
     /*max-width: 320px;*/
     /*display: none;*/
 }
 
-}
+/*}*/
