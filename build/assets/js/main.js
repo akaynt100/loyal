@@ -205,8 +205,8 @@ $(window).resize(function(){
             slidesToShow: 1,
             slidesToScroll: 1,
             draggable: true,
-            nextArrow: '<div class="rightArrow"></div>',
-            prevArrow: '<div class="leftArrow"></div>'
+            nextArrow: '<div class="rightCatalogArrow"><img src="assets/images/scroll-arrow-right.png"></div>',
+            prevArrow: '<div class="leftCatalogArrow"><img src="assets/images/scroll-arrow-left.png"></div>'
         });
     } else {
         $('.catalog').unslick();
@@ -214,12 +214,12 @@ $(window).resize(function(){
 });
 
 // ***** remove this *******
-$('.catalog').slick({
-    arrows: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    draggable: true,
-    nextArrow: '<div class="rightCatalogArrow"></div>',
-    prevArrow: '<div class="leftCatalogArrow"></div>'
-});
+//$('.catalog').slick({
+//    arrows: true,
+//    slidesToShow: 1,
+//    slidesToScroll: 1,
+//    draggable: true,
+//    nextArrow: '<div class="rightCatalogArrow"><img src="assets/images/scroll-arrow-right.png"></div>',
+//    prevArrow: '<div class="leftCatalogArrow"><img src="assets/images/scroll-arrow-left.png"></div>'
+//});
 //**********************************************

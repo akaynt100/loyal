@@ -135,6 +135,5 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('default', ['build', 'watch', 'browser-sync']);
-//gulp.task('default', ['build', 'webserver', 'watch']);
+gulp.task('default', ['build', 'webserver', 'watch']);
 

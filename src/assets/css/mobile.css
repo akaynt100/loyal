@@ -5,7 +5,7 @@
 }
 
 /* - - - - - - - - - - - - - global - - - - - - - - - - - -*/
-/*@media all and (max-width: 320px) {*/
+@media all and (max-width: 320px) {
 .basic_width {
     max-width: 280px;
     width: 280px;
@@ -23,8 +23,16 @@
     float: right;
 }
 
+.mobile-fl_e {
+    align-items: flex-end;
+}
+
 .mobile-fl_l {
     float: left;
+}
+
+.mobile-fl_n {
+    float: none;
 }
 
 .accordion__phone, .logo-mobile {
@@ -33,6 +41,10 @@
 
 .mobile-none {
     display: none;
+}
+
+.block {
+    padding-bottom: 42px;
 }
 
 /* - - - - - - - - - - - - - header - - - - - - - - - - - -*/
@@ -91,7 +103,10 @@
 
 .accordion__phone label:before {
     position: absolute;
-    content: "\1F783";
+    content: "";
+    background: url("../images/select-drop-arrow.png") 50% 50% no-repeat;
+    width: 11px;
+    height: 16px;
     right: 50px;
     color: #000;
     font-size: 16px;
@@ -117,8 +132,7 @@
 }
 
 .accordion__phone > :checked + label:before {
-    content: "\1F781";
-    line-height: 21px;
+    transform: rotate(180deg);
 }
 
 /* - - - - - - - - - - - - - nav - - - - - - - - - - - -*/
@@ -177,7 +191,7 @@
     right: -9px;
 }
 
-.count__elem-mobile {
+.count__elem-mobile, .count {
     width: 20px;
     height: 20px;
     padding: 0 1px;
@@ -229,6 +243,8 @@
     background-position: 8.8% 38%;
 }
 
+
+
 /* - - - - - - - - - - - - - temp-selection - - - - - - - - - - - -*/
 .temp-selection {
     outline: 1px solid black;
@@ -246,6 +262,7 @@
 .catalog__el {
     width: 100%;
     margin: 0;
+    padding: 20px 23px 27px;
 }
 
 .catalog__el:hover .product__addition {
@@ -292,8 +309,50 @@
     z-index: 10;
 }
 
+.leftCatalogArrow img, .rightCatalogArrow img {
+    position: absolute;
+    top: calc(50% - 9px);
+}
+
+.leftCatalogArrow img {
+    left: 3px;
+}
+
 .rightCatalogArrow:hover, .leftCatalogArrow:hover {
     cursor: pointer;
+}
+
+.season_mark_summer::before,.season_mark_winter::before {
+    top: 10px;
+    right: 10px
+}
+
+.rating {
+    margin-left: 5px;
+}
+
+.product__manufacturer {
+    margin-right: 10px;
+}
+
+.product__title-wrap {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.product__title {
+    font-size: 1rem;
+    font-family: "OpenSans-Bold";
+    color: #3798cb;
+}
+
+.product__price {
+    width: 48%;
+    padding-left: 5px;
+}
+
+.product__price-old {
+    width: 52%;
 }
 
 .links__mobile {
@@ -301,17 +360,119 @@
 }
 
 .links__mobile a {
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
-/*.links a:not(:first-child) {*/
-    /*margin-left: 20px;*/
-/*}*/
+.links a:not(:first-child) {
+    margin-left: 36px;
+    margin-right: 22px;
+}
 
-/******************************************************/
+
+
+/* - - - - - - - - - - - - - articles-wrap - - - - - - - - - - - -*/
+.action-banner {
+    width: 100%;
+    margin-right: 0;
+}
+
+.action-banner img {
+    height: 312px;
+}
+
+.articles {
+    width: 100%;
+    padding-top: 46px;
+}
+
+.article {
+    width: 100%;
+    margin-top: -2px;
+    line-height: 1.25rem;
+    padding-right: 15px;
+}
+
+.article__title {
+    margin-bottom: 6px;
+}
+
+.articles-wrap .article:not(:first-of-type) {
+    display: none;
+}
+
+
+/* - - - - - - - - - - - - - last__visited - - - - - - - - - - - -*/
+.last__visited-item {
+    margin-right: 5px;
+}
+
+.mCSB_horizontal.mCSB_inside>.mCSB_container {
+    margin-bottom: 45px;
+}
+
+
+
+/* - - - - - - - - - - - - - seo__text - - - - - - - - - - - -*/
+.seo__text {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-top: 14px;
+}
+
+
+
+/* - - - - - - - - - - - - - footer - - - - - - - - - - - -*/
+.footer {
+    margin-bottom: 47px;
+}
+
+.footer__payment, .footer__top, .copyright {
+    display: none;
+}
+
+.footer__social {
+    width: 100%;
+}
+
+.footer__social_title {
+    text-align: center;
+}
+
+.footer__bottom {
+    justify-content: center;
+}
+
+/* - - - - - - - - - - - - - user-panel - - - - - - - - - - - -*/
 .user-panel {
-    /*max-width: 320px;*/
-    /*display: none;*/
+    height: 47px;
 }
 
-/*}*/
+.user-panel__btn-text, .user-panel__btn_total, .user-panel__btn_compare {
+    display: none;
+}
+
+.user-panel__btn {
+    padding: 14px 0 13px 25px
+}
+
+.user-panel__btn_cta {
+    margin-top: 9px;
+    margin-left: -7px;
+}
+
+.user-panel__btns .user-panel__btn {
+    margin-right: 16px;
+}
+
+.user-panel__btns .user-panel__btn_favorite {
+    margin-right: 42px;
+    background-position: 10% 40%;
+}
+
+.user-panel__to-top {
+    width: 50px;
+    margin-right: -22px;
+    background-position: 50% 43%;
+}
+
+}
