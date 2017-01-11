@@ -340,7 +340,7 @@
     margin-bottom: 15px;
 }
 
-.product__title {
+.product__title:last-of-type {
     font-size: 1rem;
     font-family: "OpenSans-Bold";
     color: #3798cb;
