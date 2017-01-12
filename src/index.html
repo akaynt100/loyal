@@ -102,133 +102,553 @@
                 </div>
             </a>
         </div>
-        <!--<div class="selection-tabs-wrap selection_main_indent basic_width">-->
-            <!--<ul class="selection-tabs clearfix_">-->
-                <!--<li class="selection-tabs__el selection-tabs__obj">-->
-                    <!--<img src="assets/images/tab-1.png" alt="">-->
-                    <!--подбор шин-->
-                <!--</li>-->
-                <!--<li class="selection-tabs__el selection-tabs__obj">-->
-                    <!--<img src="assets/images/tab-2.png" alt="">-->
-                    <!--подбор дисков-->
-                <!--</li>-->
-            <!--</ul>-->
-            <!--<div class="selection-tabs-content selection-tabs-content-outer">-->
-                <!--<div class="tabs-content__el">-->
-                    <!--<ul class="selection-tabs clearfix_">-->
-                        <!--<li class="selection-tabs__el selection-tabs__type selection-tabs__type_selected">-->
-                            <!--по параметрам-->
-                        <!--</li>-->
-                        <!--<li class="selection-tabs__el selection-tabs__type">-->
-                            <!--по автомобилю-->
-                        <!--</li>-->
-                    <!--</ul>-->
-                    <!--<div class="selection-tabs-content selection-tabs-content-inner">-->
-                        <!--<div class="tabs-content__el clearfix_">-->
-                            <!--<div class="selection__form-wrap selection__form-wrap-params">-->
-                                <!--<form action="" method="post" class="selection__form clearfix_">-->
-                                    <!--<div class="clearfix_">-->
-                                        <!--<label class="form__l form__l_md fl_l">-->
-                                            <!--<span class="form__l-title">-->
-                                                <!--Производитель-->
-                                            <!--</span>-->
-                                            <!--<select class="form__el custom__select">-->
-                                                <!--<option disabled selected>-->
-                                                     <!--Все производители-->
-                                                <!--</option>-->
-                                                <!--<option>-->
-                                                    <!--test1-->
-                                                <!--</option>-->
-                                                <!--<option>-->
-                                                    <!--test2-->
-                                                <!--</option>-->
-                                                <!--<option>-->
-                                                    <!--test3-->
-                                                <!--</option>-->
-                                            <!--</select>-->
-                                        <!--</label>-->
-                                        <!--<div class="tires__scheme-wrap fl_r">-->
-                                            <!--<label class="form__l tire__params tire__params-width">-->
-                                                <!--<span class="form__l-title">-->
-                                                    <!--Ширина-->
-                                                <!--</span>-->
-                                                <!--<select class="form__el custom__select">-->
-                                                    <!--<option disabled selected>-->
-                                                        <!--205-->
-                                                    <!--</option>-->
-                                                    <!--<option>-->
-                                                        <!--206-->
-                                                    <!--</option>-->
-                                                    <!--<option>-->
-                                                        <!--207-->
-                                                    <!--</option>-->
-                                                    <!--<option>-->
-                                                        <!--208-->
-                                                    <!--</option>-->
-                                                <!--</select>-->
-                                            <!--</label>-->
-                                            <!--<label class="form__l tire__params tire__params-profile">-->
-                                                <!--<span class="form__l-title">-->
-                                                    <!--Профиль-->
-                                                <!--</span>-->
-                                                <!--<select class="form__el custom__select">-->
-                                                    <!--<option disabled selected>-->
-                                                        <!--55-->
-                                                    <!--</option>-->
-                                                    <!--<option>-->
-                                                        <!--56-->
-                                                    <!--</option>-->
-                                                    <!--<option>-->
-                                                        <!--57-->
-                                                    <!--</option>-->
-                                                    <!--<option>-->
-                                                        <!--58-->
-                                                    <!--</option>-->
-                                                <!--</select>-->
-                                                <!--<span class="profile__clarification">-->
-                                                    <!--Профиль - процентное отношение ширины шины к ее высоте-->
-                                                <!--</span>-->
-                                            <!--</label>-->
-                                            <!--<label class="form__l tire__params tire__params-diameter">-->
-                                                <!--<span class="form__l-title">-->
-                                                    <!--Диаметр-->
-                                                <!--</span>-->
-                                                <!--<select class="form__el custom__select">-->
-                                                    <!--<option disabled selected>-->
-                                                        <!--16-->
-                                                    <!--</option>-->
-                                                    <!--<option>-->
-                                                        <!--17-->
-                                                    <!--</option>-->
-                                                    <!--<option>-->
-                                                        <!--18-->
-                                                    <!--</option>-->
-                                                    <!--<option>-->
-                                                        <!--19-->
-                                                    <!--</option>-->
-                                                <!--</select>-->
-                                            <!--</label>-->
 
-                                            <!--<div class="tires__scheme">-->
-                                                <!--<img src="assets/images/tires.png" alt="">-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                    <!--<div class="fl_l form__l_md">-->
-                                        <!--<label class="form__l">-->
-                                            <!--<span class="form__l-title">-->
-                                                <!--Сезонность-->
-                                            <!--</span>-->
 
-                                        <!--</label>-->
-                                    <!--</div>-->
-                                <!--</form>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
+        <div class="selection-tabs-upper-level selection_main_indent basic_width">
+            <ul class="selection-tabs tabs-first-level clearfix_">
+                <li class="selection-tabs__el selection-tabs__obj selection-tabs__obj-active" data-tab-upper-level = '1'>
+                    <img src="assets/images/tab-1.png" alt="">
+                    подбор шин
+                </li>
+                <li class="selection-tabs__el selection-tabs__obj" data-tab-upper-level = '2'>
+                    <img src="assets/images/tab-2.png" alt="">
+                    подбор дисков
+                </li>
+            </ul>
+            <div>
+                <div class="selection-tabs-content selection-tabs-content-outer tabs-content-first-level" data-tab-content-upper-level = '1'>
+                    <div class="tabs-content__el">
+                        <div class="selection-tabs-wrap">
+                            <ul class="selection-tabs tabs-second-level clearfix_">
+                                <li class="selection-tabs__el selection-tabs__type selection-tabs__type_selected"  data-tab="1">
+                                    по параметрам
+                                </li>
+                                <li class="selection-tabs__el selection-tabs__type" data-tab="2">
+                                    по автомобилю
+                                </li>
+                            </ul>
+                            <div>
+                                <div class="selection-tabs-content selection-tabs-content-inner tabs-second-level" data-tab-content="1">
+                                    <div class="tabs-content__el clearfix_">
+                                        <div class="selection__form-wrap selection__form-wrap-params">
+                                            <form action="" method="post" class="selection__form clearfix_">
+                                                <div class="clearfix_">
+                                                    <label class="form__l form__l_md fl_l">
+                                                    <span class="form__l-title">
+                                                        Производитель
+                                                    </span>
+                                                        <select class="form__el custom__select">
+                                                            <option disabled selected>
+                                                                Все производители
+                                                            </option>
+                                                            <option>
+                                                                test1
+                                                            </option>
+                                                            <option>
+                                                                test2
+                                                            </option>
+                                                            <option>
+                                                                test3
+                                                            </option>
+                                                        </select>
+                                                    </label>
+                                                    <div class="tires__scheme-wrap fl_r">
+                                                        <label class="form__l tire__params tire__params-width">
+                                                        <span class="form__l-title">
+                                                            Ширина
+                                                        </span>
+                                                            <select class="form__el custom__select">
+                                                                <option disabled selected>
+                                                                    205
+                                                                </option>
+                                                                <option>
+                                                                    206
+                                                                </option>
+                                                                <option>
+                                                                    207
+                                                                </option>
+                                                                <option>
+                                                                    208
+                                                                </option>
+                                                            </select>
+                                                        </label>
+                                                        <label class="form__l tire__params tire__params-profile">
+                                                        <span class="form__l-title">
+                                                            Профиль
+                                                        </span>
+                                                            <select class="form__el custom__select">
+                                                                <option disabled selected>
+                                                                    55
+                                                                </option>
+                                                                <option>
+                                                                    56
+                                                                </option>
+                                                                <option>
+                                                                    57
+                                                                </option>
+                                                                <option>
+                                                                    58
+                                                                </option>
+                                                            </select>
+                                                        <span class="profile__clarification">
+                                                            Профиль - процентное отношение ширины шины к ее высоте
+                                                        </span>
+                                                        </label>
+                                                        <label class="form__l tire__params tire__params-diameter">
+                                                        <span class="form__l-title">
+                                                            Диаметр
+                                                        </span>
+                                                            <select class="form__el custom__select">
+                                                                <option disabled selected>
+                                                                    16
+                                                                </option>
+                                                                <option>
+                                                                    17
+                                                                </option>
+                                                                <option>
+                                                                    18
+                                                                </option>
+                                                                <option>
+                                                                    19
+                                                                </option>
+                                                            </select>
+                                                        </label>
+
+                                                        <div class="tires__scheme">
+                                                            <img src="assets/images/tires.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="season__type-btns fl_l form__l_md">
+                                                    <div class="form__l">
+                                                    <span class="form__l-title">
+                                                        Сезонность
+                                                    </span>
+                                                    <span class="form__l season__type-wrap">
+                                                        <span class="hide">
+                                                            <input type="radio" name="season-type" value="summer" data-input-name="summer">
+                                                            <input type="radio" name="season-type" value="winter" data-input-name="winter">
+                                                        </span>
+                                                        <span class="season__type season__summer season__type-active" data-btn-name="summer">летние / внесезонные</span>
+                                                        <span class="season__type season__winter" data-btn-name="winter">зимние</span>
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                                <div class="selection__btns clear">
+                                                    <div class="selection__submit-btn-wrap inline">
+                                                        <input type="submit" class="selection__submit-btn" value="Показать">
+                                                    </div>
+                                                    <div class="selection__reset-btn-wrap inline">
+                                                        <a href="" class="selection__reset-btn"><span>Сборсить фильтр</span></a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="selection__popular">
+                                            <div class="form__l-title">
+                                                Популярные типоразмеры
+                                            </div>
+                                            <div class="popular__list flex_row">
+                                                <a href="" class="popular__list-item">
+                                                    <span>205/55 R16</span>
+                                                </a>
+                                                <a href="" class="popular__list-item">
+                                                    <span>205/55 R16</span>
+                                                </a>
+                                                <a href="" class="popular__list-item">
+                                                    <span>205/55 R16</span>
+                                                </a>
+                                                <a href="" class="popular__list-item">
+                                                    <span>205/55 R16</span>
+                                                </a>
+                                                <a href="" class="popular__list-item">
+                                                    <span>205/55 R16</span>
+                                                </a>
+                                                <a href="" class="popular__list-item">
+                                                    <span>205/55 R16</span>
+                                                </a>
+                                                <a href="" class="popular__list-item">
+                                                    <span>205/55 R16</span>
+                                                </a>
+                                                <a href="" class="popular__list-item">
+                                                    <span>205/55 R16</span>
+                                                </a>
+                                                <a href="" class="popular__list-item">
+                                                    <span>205/55 R16</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="selection-tabs-content selection-tabs-content-inner tabs-second-level" data-tab-content="2">
+                                    <div class="tabs-content__el clearfix_">
+                                        <div class="selection__form-wrap selection__form-wrap-auto">
+                                            <form action="" method="post" class="selection__form clearfix_">
+                                                <div class="clearfix_">
+                                                    <label class="form__l form__l-auto-tab form__l_md fl_l">
+                                                    <span class="form__l-title">
+                                                        Марка автомобиля
+                                                    </span>
+                                                        <select class="form__el custom__select">
+                                                            <option disabled selected>
+                                                                Все производители
+                                                            </option>
+                                                            <option>
+                                                                test1
+                                                            </option>
+                                                            <option>
+                                                                test2
+                                                            </option>
+                                                            <option>
+                                                                test3
+                                                            </option>
+                                                        </select>
+                                                    </label>
+                                                    <label class="form__l form__l-auto-tab form__l_md fl_r">
+                                                    <span class="form__l-title">
+                                                        Марка автомобиля
+                                                    </span>
+                                                        <select class="form__el custom__select">
+                                                            <option disabled selected>
+                                                                Все производители
+                                                            </option>
+                                                            <option>
+                                                                test1
+                                                            </option>
+                                                            <option>
+                                                                test2
+                                                            </option>
+                                                            <option>
+                                                                test3
+                                                            </option>
+                                                        </select>
+                                                    </label>
+                                                    <label class="form__l form__l-auto-tab form__l_md fl_l">
+                                                    <span class="form__l-title">
+                                                        Год выпуска
+                                                    </span>
+                                                        <select class="form__el custom__select">
+                                                            <option disabled selected>
+                                                                Все производители
+                                                            </option>
+                                                            <option>
+                                                                test1
+                                                            </option>
+                                                            <option>
+                                                                test2
+                                                            </option>
+                                                            <option>
+                                                                test3
+                                                            </option>
+                                                        </select>
+                                                    </label>
+                                                    <label class="form__l form__l-auto-tab form__l_md fl_r">
+                                                    <span class="form__l-title">
+                                                        Модификация
+                                                    </span>
+                                                        <select class="form__el custom__select">
+                                                            <option disabled selected>
+                                                                Все производители
+                                                            </option>
+                                                            <option>
+                                                                test1
+                                                            </option>
+                                                            <option>
+                                                                test2
+                                                            </option>
+                                                            <option>
+                                                                test3
+                                                            </option>
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                                <div class="selection__btns clear">
+                                                    <div class="selection__submit-btn-wrap inline">
+                                                        <input type="submit" class="selection__submit-btn" value="Показать">
+                                                    </div>
+                                                    <div class="selection__reset-btn-wrap inline">
+                                                        <a href="" class="selection__reset-btn"><span>Сборсить фильтр</span></a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="selection-tabs-content selection-tabs-content-outer selection-tabs-xl-theme tabs-content-first-level"  data-tab-content-upper-level = '2'>
+                    <div class="tabs-content__el">
+                        <div class="selection-tabs-wrap">
+                            <ul class="selection-tabs tabs-second-level clearfix_">
+                                <li class="selection-tabs__el selection-tabs__type selection-tabs__type_selected"  data-tab="1">
+                                    по параметрам
+                                </li>
+                                <li class="selection-tabs__el selection-tabs__type" data-tab="2">
+                                    по автомобилю
+                                </li>
+                            </ul>
+                            <div>
+                                <div class="selection-tabs-content selection-tabs-content-inner tabs-second-level" data-tab-content="1">
+                                    <div class="tabs-content__el clearfix_">
+                                        <div class="selection__form-wrap">
+                                            <form action="" method="post" class="selection__form clearfix_">
+                                                <label class="form__l form__l_xl form__l-auto-tab">
+                                                                <span class="form__l-title">
+                                                                    Производитель
+                                                                </span>
+                                                    <select class="form__el custom__select">
+                                                        <option disabled selected>
+                                                            Все производители
+                                                        </option>
+                                                        <option>
+                                                            test1
+                                                        </option>
+                                                        <option>
+                                                            test2
+                                                        </option>
+                                                        <option>
+                                                            test3
+                                                        </option>
+                                                    </select>
+                                                </label>
+                                                <div class="flex_row">
+                                                    <label class="form__l form__l-auto-tab form__l_sm">
+                                                                <span class="form__l-title">
+                                                                    Тип диска
+                                                                </span>
+                                                        <select class="form__el custom__select">
+                                                            <option disabled selected>
+                                                                -
+                                                            </option>
+                                                            <option>
+                                                                test1
+                                                            </option>
+                                                            <option>
+                                                                test2
+                                                            </option>
+                                                            <option>
+                                                                test3
+                                                            </option>
+                                                        </select>
+                                                    </label>
+                                                    <label class="form__l form__l-auto-tab form__l_sm">
+                                                                <span class="form__l-title">
+                                                                    PCD <span class="sm_text">(диаметр окружности крепёжных отверстий)</span>
+                                                                </span>
+                                                        <select class="form__el custom__select">
+                                                            <option disabled selected>
+                                                                -
+                                                            </option>
+                                                            <option>
+                                                                test1
+                                                            </option>
+                                                            <option>
+                                                                test2
+                                                            </option>
+                                                            <option>
+                                                                test3
+                                                            </option>
+                                                        </select>
+                                                    </label>
+                                                    <label class="form__l form__l-auto-tab form__l_sm">
+                                                                <span class="form__l-title">
+                                                                    Ширина диска
+                                                                </span>
+                                                        <select class="form__el custom__select">
+                                                            <option disabled selected>
+                                                                -
+                                                            </option>
+                                                            <option>
+                                                                test1
+                                                            </option>
+                                                            <option>
+                                                                test2
+                                                            </option>
+                                                            <option>
+                                                                test3
+                                                            </option>
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                                <div class="flex_row">
+                                                    <label class="form__l form__l-auto-tab form__l_sm">
+                                                                <span class="form__l-title">
+                                                                    Диаметр
+                                                                </span>
+                                                        <select class="form__el custom__select">
+                                                            <option disabled selected>
+                                                                -
+                                                            </option>
+                                                            <option>
+                                                                test1
+                                                            </option>
+                                                            <option>
+                                                                test2
+                                                            </option>
+                                                            <option>
+                                                                test3
+                                                            </option>
+                                                        </select>
+                                                    </label>
+                                                    <label class="form__l form__l-auto-tab form__l_sm">
+                                                                <span class="form__l-title">
+                                                                    Вылет от
+                                                                </span>
+                                                        <select class="form__el custom__select">
+                                                            <option disabled selected>
+                                                                -
+                                                            </option>
+                                                            <option>
+                                                                test1
+                                                            </option>
+                                                            <option>
+                                                                test2
+                                                            </option>
+                                                            <option>
+                                                                test3
+                                                            </option>
+                                                        </select>
+                                                    </label>
+                                                    <label class="form__l form__l-auto-tab form__l_sm">
+                                                                <span class="form__l-title">
+                                                                    Вылет до
+                                                                </span>
+                                                        <select class="form__el custom__select">
+                                                            <option disabled selected>
+                                                                -
+                                                            </option>
+                                                            <option>
+                                                                test1
+                                                            </option>
+                                                            <option>
+                                                                test2
+                                                            </option>
+                                                            <option>
+                                                                test3
+                                                            </option>
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/images/disk-width.png" alt="">
+                                                </div>
+                                                <div class="selection__btns clear">
+                                                    <div class="selection__submit-btn-wrap inline">
+                                                        <input type="submit" class="selection__submit-btn" value="Показать">
+                                                    </div>
+                                                    <div class="selection__reset-btn-wrap inline">
+                                                        <a href="" class="selection__reset-btn"><span>Сборсить фильтр</span></a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="selection-tabs-content selection-tabs-content-inner tabs-second-level" data-tab-content="2">
+                                    <div class="tabs-content__el clearfix_">
+                                        <div class="selection__form-wrap selection__form-wrap-auto">
+                                            <form action="" method="post" class="selection__form clearfix_">
+                                                <div class="clearfix_">
+                                                    <label class="form__l form__l-auto-tab form__l_md fl_l">
+                                                    <span class="form__l-title">
+                                                        Марка автомобиля
+                                                    </span>
+                                                        <select class="form__el custom__select">
+                                                            <option disabled selected>
+                                                                Все производители
+                                                            </option>
+                                                            <option>
+                                                                test1
+                                                            </option>
+                                                            <option>
+                                                                test2
+                                                            </option>
+                                                            <option>
+                                                                test3
+                                                            </option>
+                                                        </select>
+                                                    </label>
+                                                    <label class="form__l form__l-auto-tab form__l_md fl_r">
+                                                    <span class="form__l-title">
+                                                        Марка автомобиля
+                                                    </span>
+                                                        <select class="form__el custom__select">
+                                                            <option disabled selected>
+                                                                Все производители
+                                                            </option>
+                                                            <option>
+                                                                test1
+                                                            </option>
+                                                            <option>
+                                                                test2
+                                                            </option>
+                                                            <option>
+                                                                test3
+                                                            </option>
+                                                        </select>
+                                                    </label>
+                                                    <label class="form__l form__l-auto-tab form__l_md fl_l">
+                                                    <span class="form__l-title">
+                                                        Год выпуска
+                                                    </span>
+                                                        <select class="form__el custom__select">
+                                                            <option disabled selected>
+                                                                Все производители
+                                                            </option>
+                                                            <option>
+                                                                test1
+                                                            </option>
+                                                            <option>
+                                                                test2
+                                                            </option>
+                                                            <option>
+                                                                test3
+                                                            </option>
+                                                        </select>
+                                                    </label>
+                                                    <label class="form__l form__l-auto-tab form__l_md fl_r">
+                                                    <span class="form__l-title">
+                                                        Модификация
+                                                    </span>
+                                                        <select class="form__el custom__select">
+                                                            <option disabled selected>
+                                                                Все производители
+                                                            </option>
+                                                            <option>
+                                                                test1
+                                                            </option>
+                                                            <option>
+                                                                test2
+                                                            </option>
+                                                            <option>
+                                                                test3
+                                                            </option>
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                                <div class="selection__btns clear">
+                                                    <div class="selection__submit-btn-wrap inline">
+                                                        <input type="submit" class="selection__submit-btn" value="Показать">
+                                                    </div>
+                                                    <div class="selection__reset-btn-wrap inline">
+                                                        <a href="" class="selection__reset-btn"><span>Сборсить фильтр</span></a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div class="catalog-wrap block gray_theme">
             <div class="basic_width flex_row">

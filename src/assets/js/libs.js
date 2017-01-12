@@ -3,7 +3,6 @@
 //= libs/jquery.mCustomScrollbar.min.js
 //= libs/jquery.spinner.js
 //= libs/jquery.mask.min.js
-//= libs/trianzoom.js
 //= libs/jquery.barrating.min.js
 //= libs/slick.min.js
 //= product-tabs.js
