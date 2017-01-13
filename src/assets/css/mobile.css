@@ -1,6 +1,6 @@
 /* - - - - - - - - - - - - - desktop - - - - - - - - - - - -*/
 .accordion__phone, .logo-mobile, .main__nav-el-mobile, .nav__mobile-block,
-.links__mobile {
+.links__mobile, .desktop-none {
     display: none;
 }
 
@@ -35,7 +35,7 @@
     float: none;
 }
 
-.accordion__phone, .logo-mobile {
+.accordion__phone, .logo-mobile, .desktop-none {
     display: block;
 }
 
@@ -245,12 +245,128 @@
 
 
 
-/* - - - - - - - - - - - - - temp-selection - - - - - - - - - - - -*/
-.temp-selection {
-    outline: 1px solid black;
-    height: 768px;
-    margin-bottom: 47px;
+/* - - - - - - - - - - - - - selection-tabs-upper-level - - - - - - - - - - - -*/
+.selection-tabs__obj {
+    width: 50%;
+    padding: 17px 8px;
+    text-align: left;
+    line-height: 1.1875rem;
 }
+
+.selection-tabs__el img {
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.selection-tabs-content-outer {
+    padding: 45px 20px 40px;
+    background: url(../images/selection-bg-2.jpg) 80% 100% no-repeat #2e3639;
+}
+
+.selection-tabs__type:not(:first-child) {
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.tires__scheme {
+    display: none;
+}
+
+.selection-tabs-content-inner {
+    padding-top: 5px;
+}
+
+.selection__form-wrap-params, .selection__form-wrap-auto {
+    width: 100%;
+}
+
+.form__l-title {
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+
+.form__l_md, .selection__form-wrap-auto .form__l_md,
+.form__l_sm {
+    width: 100%;
+}
+
+.tire__params, .tire__params-profile .form__el {
+    width: 60px;
+}
+
+.tire__params-width, .tire__params-profile {
+    margin-right: 26px;
+}
+
+.tire__params-profile::after {
+    right: -23px;
+}
+
+.tire__params-width::after {
+    right: -31px;
+}
+
+.tire__params-profile .form__l-title {
+    background: none;
+}
+
+.custom__select {
+    background-position: right 10px center;
+}
+
+.season__type-btns {
+    margin: 0;
+}
+
+.season__type-wrap {
+    margin-top: 22px;
+}
+
+.season__type-wrap .season__type:last-child {
+    margin-top: 22px;
+}
+
+.selection__popular {
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+
+.selection__submit-btn-wrap {
+    border-radius: 40px;
+}
+
+.selection__reset-btn-wrap {
+    margin-left: 15px;
+}
+
+.selection__reset-btn {
+    background-image: url("../images/reset-selection-mobile.png");
+    padding-left: 20px;
+}
+
+.selection__reset-btn span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    color: #fff;
+}
+
+.selection__submit-btn {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    letter-spacing: 0.04rem;
+}
+
+.popular__list {
+    margin-top: -6px;
+    padding-right: 9px;
+}
+
+
+
+
+
+
 
 
 
@@ -349,6 +465,10 @@
 .product__price {
     width: 48%;
     padding-left: 5px;
+}
+
+.product__price-wrap {
+    padding-right: 0;
 }
 
 .product__price-old {

@@ -298,11 +298,6 @@
                     </a>
                 </div>
             </div>
-            <!-- - - - - - - - -    temp-selection   - - - - - - - - -->
-            <div class="temp-selection basic_width">
-
-            </div>
-
         </div>
         <div class="advantages basic_width flex_row">
             <a href="" class="advantages__el">
@@ -388,9 +383,11 @@
                                 <div class="selection-tabs-content selection-tabs-content-inner tabs-second-level" data-tab-content="1">
                                     <div class="tabs-content__el clearfix_">
                                         <div class="selection__form-wrap selection__form-wrap-params">
-                                            <form action="" method="post" class="selection__form clearfix_">
+                                            <!-- Ввел id для мобильной версии, т.к. требуется переместить selection__btns
+                                              за пределы формы -->
+                                            <form action="" method="post" class="selection__form clearfix_" id="selection__form-id">
                                                 <div class="clearfix_">
-                                                    <label class="form__l form__l_md fl_l">
+                                                    <label class="form__l form__l_md fl_l mobile-fl_n">
                                                     <span class="form__l-title">
                                                         Производитель
                                                     </span>
@@ -409,7 +406,7 @@
                                                             </option>
                                                         </select>
                                                     </label>
-                                                    <div class="tires__scheme-wrap fl_r">
+                                                    <div class="tires__scheme-wrap fl_r mobile-fl_n">
                                                         <label class="form__l tire__params tire__params-width">
                                                         <span class="form__l-title">
                                                             Ширина
@@ -491,7 +488,7 @@
                                                     </span>
                                                     </div>
                                                 </div>
-                                                <div class="selection__btns clear">
+                                                <div class="selection__btns mobile-none clear">
                                                     <div class="selection__submit-btn-wrap inline">
                                                         <input type="submit" class="selection__submit-btn" value="Показать">
                                                     </div>
@@ -533,8 +530,27 @@
                                                 <a href="" class="popular__list-item">
                                                     <span>205/55 R16</span>
                                                 </a>
+                                                <a href="" class="popular__list-item">
+                                                    <span>205/55 R16</span>
+                                                </a>
+                                                <a href="" class="popular__list-item">
+                                                    <span>205/55 R16</span>
+                                                </a>
+                                                <a href="" class="popular__list-item">
+                                                    <span>205/55 R16</span>
+                                                </a>
                                             </div>
                                         </div>
+                                        <!-- copy selection__btns for mobile -->
+                                        <div class="selection__btns desktop-none clear">
+                                            <div class="selection__submit-btn-wrap inline">
+                                                <input type="submit" form="selection__form-id" class="selection__submit-btn" value="Показать">
+                                            </div>
+                                            <div class="selection__reset-btn-wrap inline">
+                                                <a href="" class="selection__reset-btn"><span>Сборсить</span></a>
+                                            </div>
+                                        </div>
+                                        <!---->
                                     </div>
                                 </div>
                                 <div class="selection-tabs-content selection-tabs-content-inner tabs-second-level" data-tab-content="2">
@@ -624,7 +640,8 @@
                                                         <input type="submit" class="selection__submit-btn" value="Показать">
                                                     </div>
                                                     <div class="selection__reset-btn-wrap inline">
-                                                        <a href="" class="selection__reset-btn"><span>Сборсить фильтр</span></a>
+                                                        <a href="" class="selection__reset-btn mobile-none"><span>Сборсить фильтр</span></a>
+                                                        <a href="" class="selection__reset-btn desktop-none"><span>Сборсить</span></a>
                                                     </div>
                                                 </div>
                                             </form>
@@ -671,7 +688,7 @@
                                                         </option>
                                                     </select>
                                                 </label>
-                                                <div class="flex_row">
+                                                <div class="flex_row flex_mobile_column">
                                                     <label class="form__l form__l-auto-tab form__l_sm">
                                                                 <span class="form__l-title">
                                                                     Тип диска
@@ -730,7 +747,7 @@
                                                         </select>
                                                     </label>
                                                 </div>
-                                                <div class="flex_row">
+                                                <div class="flex_row flex_mobile_column">
                                                     <label class="form__l form__l-auto-tab form__l_sm">
                                                                 <span class="form__l-title">
                                                                     Диаметр
@@ -789,7 +806,7 @@
                                                         </select>
                                                     </label>
                                                 </div>
-                                                <div>
+                                                <div class="mobile-none">
                                                     <img src="assets/images/disk-width.png" alt="">
                                                 </div>
                                                 <div class="selection__btns clear">
@@ -797,7 +814,8 @@
                                                         <input type="submit" class="selection__submit-btn" value="Показать">
                                                     </div>
                                                     <div class="selection__reset-btn-wrap inline">
-                                                        <a href="" class="selection__reset-btn"><span>Сборсить фильтр</span></a>
+                                                        <a href="" class="selection__reset-btn mobile-none"><span>Сборсить фильтр</span></a>
+                                                        <a href="" class="selection__reset-btn desktop-none"><span>Сборсить</span></a>
                                                     </div>
                                                 </div>
                                             </form>
@@ -891,7 +909,8 @@
                                                         <input type="submit" class="selection__submit-btn" value="Показать">
                                                     </div>
                                                     <div class="selection__reset-btn-wrap inline">
-                                                        <a href="" class="selection__reset-btn"><span>Сборсить фильтр</span></a>
+                                                        <a href="" class="selection__reset-btn mobile-none"><span>Сборсить фильтр</span></a>
+                                                        <a href="" class="selection__reset-btn desktop-none"><span>Сборсить</span></a>
                                                     </div>
                                                 </div>
                                             </form>

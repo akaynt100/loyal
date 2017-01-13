@@ -271,3 +271,14 @@ $(window).resize(function(){
         $('.catalog').unslick();
     }
 });
+
+// ***** remove this *******
+//$('.catalog').slick({
+//    arrows: true,
+//    slidesToShow: 1,
+//    slidesToScroll: 1,
+//    draggable: true,
+//    nextArrow: '<div class="rightCatalogArrow"><img src="assets/images/scroll-arrow-right.png"></div>',
+//    prevArrow: '<div class="leftCatalogArrow"><img src="assets/images/scroll-arrow-left.png"></div>'
+//});
+//**********************************************
