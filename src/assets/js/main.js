@@ -244,7 +244,15 @@ $('.sliderBrand').slick({
     slidesToScroll: 1,
     draggable: true,
     nextArrow: '<div class="rightArrow"></div>',
-    prevArrow: '<div class="leftArrow"></div>'
+    prevArrow: '<div class="leftArrow"></div>',
+
+    responsive: [{
+        breakpoint: 481,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    }]
 });
 
 $('.sliderSertificates').slick({
@@ -253,13 +261,22 @@ $('.sliderSertificates').slick({
     slidesToScroll: 1,
     draggable: true,
     nextArrow: '<div class="rightArrow"></div>',
-    prevArrow: '<div class="leftArrow"></div>'
+    prevArrow: '<div class="leftArrow"></div>',
+
+    responsive: [{
+        breakpoint: 481,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    }]
 });
 
-$(window).resize(function(){
-    var winBr = $('.basic_width').width();
-    if( winBr <= 320 ){
-        $('.catalog').slick({
+
+$(window).width(function(){
+    var winWidth = $('.basic_width').width();
+    if( winWidth <= 480 ){
+        $('.mobile-slider').slick({
             arrows: true,
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -268,12 +285,12 @@ $(window).resize(function(){
             prevArrow: '<div class="leftCatalogArrow"><img src="assets/images/scroll-arrow-left.png"></div>'
         });
     } else {
-        $('.catalog').unslick();
+        $('.mobile-slider').unslick();
     }
 });
 
-// ***** remove this *******
-//$('.catalog').slick({
+// ***** remove this *****************************
+//$('.mobile-slider').slick({
 //    arrows: true,
 //    slidesToShow: 1,
 //    slidesToScroll: 1,

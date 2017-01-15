@@ -54,16 +54,20 @@
 
                     <div class="accordion__phone">
                         <input type="checkbox" name="accordion_check" id="accordion-toogle" >
-                        <label for="accordion-toogle"><span class="header__phone-mobile">+375 (029) 111-22-29</span></label>
+                        <label for="accordion-toogle">
+                            <span class="header__phone-mobile arrow-toggle">+375 (029) 111-22-29</span>
+                        </label>
                         <div>
                             <span class="header__phone-mobile">+375 (029) 660-77-20</span>
+                            <br>
                             <span class="header__phone-mobile">+375 (029) 111-22-29</span>
+                            <br>
                             <span class="header__phone-mobile">+375 (029) 660-77-20</span>
                         </div>
                     </div>
 
 
-                    <div class="header__phones fl_l clearfix_">
+                    <div class="header__phones fl_l clearfix_ mobile-fl_n">
                         <div class="header__phones-el mobile-fl_l">
                             <span class="header__phone">+375 (029) 111-22-29</span>
                             <span class="header__phone">+375 (029) 660-77-20</span>
@@ -266,7 +270,10 @@
             <div class="bread-crumbs clearfix_">
                 <ul class="bread-crumbs__list">
                     <li class="bread-crumbs__item">
-                        <a href="" class="bread-crumbs__link">Главная</a>
+                        <a href="" class="bread-crumbs__link mobile-none">Главная</a>
+                        <a href="" class="bread-crumbs__link desktop-none">
+                            <img src = "assets/images/bread-crumbs-home.png">
+                        </a>
                     </li>
                     <li class="bread-crumbs__item">
                         <a href="" class="bread-crumbs__link">Шины</a>
@@ -564,6 +571,12 @@
 
         <div class="pagination pagination_catalog-indent clearfix_ articlesPagination">
             <div class="pagination-inner">
+                <a href="#" class="mobile-arrow desktop-none mobile-fl_l">
+                    <img src="assets/images/mobile-arrow-left.png" alt="" title="">
+                </a>
+                <a href="#" class="mobile-arrow desktop-none mobile-fl_r">
+                    <img src="assets/images/mobile-arrow-right.png" alt="" title="">
+                </a>
                 <div class="pagination-wrap">
                     <ul class="pagination__list">
                         <li class="pagination__item">
@@ -589,7 +602,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="pagination-btns">
+                <div class="pagination-btns mobile-none">
                     <a href="#" class="pagination__btn">назад</a>
                     <a href="#" class="pagination__btn">вперед</a>
                 </div>

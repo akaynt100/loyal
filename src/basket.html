@@ -9,7 +9,7 @@
     </section>
     <div class="main-content">
         <div class="basic_width clearfix_">
-            <aside class="sidebar fl_l">
+            <aside class="sidebar fl_l mobile-full-width mobile-fl_n">
                 <ul class="user-nav">
                     <li class="user-nav__item">
                         <a class="user-nav__link" href="#">a. <span class="dash-indent">&mdash;</span> Личные данные</a>
@@ -25,7 +25,7 @@
                     </li>
                 </ul>
             </aside>
-            <form action="" method="post" class="content__section fl_r">
+            <form action="" method="post" class="content__section fl_r mobile-full-width mobile-fl_n">
                 <div class="cart-top-btns clearfix_">
                     <span class="cart-top__btn cart-top__btn_disable">Товары в корзине:</span>
                     <a href="#" class="cart-top__btn cart-top__btn_active">Готовые к заказу</a>
@@ -50,7 +50,7 @@
                             </div>
                             <div class="cart__item-btns"></div>
                         </div>
-                        <div class="orders__table-row flex_row align_start">
+                        <div class="orders__table-row flex_row align_start mobile-flex-wrap">
                             <div class="cart__item-desc clearfix_">
                                 <div class="cart__item-image">
                                     <img src="assets/images/cart-item.jpg" alt="" />
@@ -95,7 +95,80 @@
                             </div>
                             <div class="cart__item-total">
                                 <div class="product__price-final">
-                                    20 140 <span class="product__price-text">руб./шт.</span>
+                                    20 140 <span class="product__price-text">руб.</span>
+                                </div>
+                            </div>
+                            <div class="cart__item-btns">
+                                <a href="" class="addition__info-btn addition__info-btn-liked"></a>
+                                <a href="" class="addition__info-btn addition__info-btn-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orders">
+                        <div class="orders__table-row orders__table-titles flex_row">
+                            <div class="cart__item-desc">
+                                Товары
+                            </div>
+                            <div class="cart__item-discount">
+                                Скидка
+                            </div>
+                            <div class="cart__item-price">
+                                Цена
+                            </div>
+                            <div class="cart__item-count">
+                                Количество
+                            </div>
+                            <div class="cart__item-total">
+                                Сумма
+                            </div>
+                            <div class="cart__item-btns"></div>
+                        </div>
+                        <div class="orders__table-row flex_row align_start mobile-flex-wrap">
+                            <div class="cart__item-desc clearfix_">
+                                <div class="cart__item-image">
+                                    <img src="assets/images/cart-item.jpg" alt="" />
+                                </div>
+                                <div class="cart__item-info">
+                                    <div class="cart__item-title">
+                                        NOKIAN HAKKA GREEN 2
+                                    </div>
+                                    <div class="catalog__el-options catalog__item-options">
+                                        <div class="catalog__el-option">
+                                            <div class="catalog__el-option-title">Сезонность:</div>
+                                            <div class="catalog__el-option-value">Летняя</div>
+                                        </div>
+                                        <div class="catalog__el-option">
+                                            <div class="catalog__el-option-title">Класс модели:</div>
+                                            <div class="catalog__el-option-value">(Эконом Плюс)</div>
+                                        </div>
+                                        <div class="catalog__el-option">
+                                            <div class="catalog__el-option-title">Производство:</div>
+                                            <div class="catalog__el-option-value">Украина</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart__item-discount cart__item_discount-theme">
+                                10%
+                            </div>
+                            <div class="cart__item-price">
+                                <div class="product__price-final">
+                                    2 140 <span class="product__price-text">руб./шт.</span>
+                                </div>
+                                <div class="product__price-before-discount">
+                                    2 800 <span class="product__price-text">руб./шт.</span>
+                                </div>
+                            </div>
+                            <div class="cart__item-count clearfix_">
+                                <form class="count__form count__form_transparent" method="post" action="" data-trigger="spinner">
+                                    <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                    <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                    <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                </form>
+                            </div>
+                            <div class="cart__item-total">
+                                <div class="product__price-final">
+                                    20 140 <span class="product__price-text">руб.</span>
                                 </div>
                             </div>
                             <div class="cart__item-btns">

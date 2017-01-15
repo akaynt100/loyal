@@ -54,16 +54,20 @@
 
                     <div class="accordion__phone">
                         <input type="checkbox" name="accordion_check" id="accordion-toogle" >
-                        <label for="accordion-toogle"><span class="header__phone-mobile">+375 (029) 111-22-29</span></label>
+                        <label for="accordion-toogle">
+                            <span class="header__phone-mobile arrow-toggle">+375 (029) 111-22-29</span>
+                        </label>
                         <div>
                             <span class="header__phone-mobile">+375 (029) 660-77-20</span>
+                            <br>
                             <span class="header__phone-mobile">+375 (029) 111-22-29</span>
+                            <br>
                             <span class="header__phone-mobile">+375 (029) 660-77-20</span>
                         </div>
                     </div>
 
 
-                    <div class="header__phones fl_l clearfix_">
+                    <div class="header__phones fl_l clearfix_ mobile-fl_n">
                         <div class="header__phones-el mobile-fl_l">
                             <span class="header__phone">+375 (029) 111-22-29</span>
                             <span class="header__phone">+375 (029) 660-77-20</span>
@@ -266,7 +270,10 @@
             <div class="bread-crumbs clearfix_">
                 <ul class="bread-crumbs__list">
                     <li class="bread-crumbs__item">
-                        <a href="" class="bread-crumbs__link">Главная</a>
+                        <a href="" class="bread-crumbs__link mobile-none">Главная</a>
+                        <a href="" class="bread-crumbs__link desktop-none">
+                            <img src = "assets/images/bread-crumbs-home.png">
+                        </a>
                     </li>
                     <li class="bread-crumbs__item">
                         <a href="" class="bread-crumbs__link">Шины</a>
@@ -281,9 +288,9 @@
             </div>
         </div>
     </section>
-    <div class="main-content">
+    <div class="main-content m-b_zero">
         <div class="basic_width clearfix_">
-            <div class="content__section fl_l">
+            <div class="content__section fl_l mobile-full-width">
                 <div class="action">
                     <div class="action__image container">
                         <img src="assets/images/action.jpg" alt="">
@@ -310,13 +317,13 @@
                         </p>
                         <div class="phone-banner">
                             <div class="phone-banner__inner">
-                                Телефон оптового отдела: + 375 (29) 111-22-29
+                                Телефон оптового отдела: <span class="pnone-wrap">+ 375 (29) 111-22-29</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <aside class="sidebar fl_r">
+            <aside class="sidebar fl_r mobile-none">
                 <div class="aside__el">
                     <div class="aside__slider clearfix_">
                         <div class="aside-catalog__el catalog__el season_mark_winter">
@@ -476,6 +483,1195 @@
                     </div>
                 </div>
             </aside>
+        </div>
+        <div class="catalog-wrap block gray_theme desktop-none">
+            <div class="basic_width flex_row">
+                <div class="w_half">
+                    <div class="title inline">популярные</div>
+                    <div class="product-switcher main_p_switcher_indent inline">
+                    <span class="product-switcher__el tab__title">
+                        Шины
+                    </span>
+                    <span class="product-switcher__el tab__title">
+                        Диски
+                    </span>
+                    </div>
+                </div>
+                <div class="links w_half mobile-none">
+                    <a href="">Услуги и сервис</a>
+                    <a href="">Покупателям</a>
+                </div>
+            </div>
+            <div class="basic_width">
+                <div class="tabs__content-el">
+                    <div class="catalog mobile-slider catalog_main-page">
+                        <div class="catalog__el season_mark_winter">
+                            <div class="product__title">
+                                195/65 R15
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                                <div class="product__mark product__mark_best_price"></div>
+                            </div>
+                        </div>
+                        <div class="catalog__el season_mark_summer">
+                            <div class="product__title">
+                                195/65 R15
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                            </div>
+                        </div>
+                        <div class="catalog__el season_mark_winter">
+                            <div class="product__title">
+                                195/65 R15
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                                <div class="product__mark product__mark_best_price"></div>
+                            </div>
+                        </div>
+                        <div class="catalog__el season_mark_summer">
+                            <div class="product__title">
+                                195/65 R15
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                            </div>
+                        </div>
+                        <div class="catalog__el season_mark_winter">
+                            <div class="product__title">
+                                195/65 R15
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                                <div class="product__mark product__mark_best_price"></div>
+                            </div>
+                        </div>
+                        <div class="catalog__el season_mark_summer">
+                            <div class="product__title">
+                                195/65 R15
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                            </div>
+                        </div>
+                        <div class="catalog__el season_mark_winter">
+                            <div class="product__title">
+                                195/65 R15
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                                <div class="product__mark product__mark_best_price"></div>
+                            </div>
+                        </div>
+                        <div class="catalog__el season_mark_summer">
+                            <div class="product__title">
+                                195/65 R15
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                            </div>
+                        </div>
+                        <div class="catalog__el season_mark_winter">
+                            <div class="product__title">
+                                195/65 R15
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                                <div class="product__mark product__mark_best_price"></div>
+                            </div>
+                        </div>
+                        <div class="catalog__el season_mark_summer">
+                            <div class="product__title">
+                                195/65 R15
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__content-el hide">
+                    <div class="catalog mobile-slider" >
+                        <div class="catalog__el season_mark_summer">
+                            <div class="product__title">
+                                195/65 R15 1
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                                <div class="product__mark product__mark_best_price"></div>
+                            </div>
+                        </div>
+                        <div class="catalog__el season_mark_winter">
+                            <div class="product__title">
+                                195/65 R15
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                            </div>
+                        </div>
+                        <div class="catalog__el season_mark_winter">
+                            <div class="product__title">
+                                195/65 R15
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                                <div class="product__mark product__mark_best_price"></div>
+                            </div>
+                        </div>
+                        <div class="catalog__el season_mark_summer">
+                            <div class="product__title">
+                                195/65 R15
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                            </div>
+                        </div>
+                        <div class="catalog__el season_mark_winter">
+                            <div class="product__title">
+                                195/65 R15
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                                <div class="product__mark product__mark_best_price"></div>
+                            </div>
+                        </div>
+                        <div class="catalog__el season_mark_summer">
+                            <div class="product__title">
+                                195/65 R15
+                            </div>
+                            <div class="product__image">
+                                <a href="">
+                                    <img src="assets/images/wire.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="flex_row">
+                                <div class="product__rating-wrap ">
+                                    <div class="rating" data-rating-value = "4">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="" class="product__manufacturer">
+                                    Nokian
+                                </a>
+                            </div>
+                            <div class="product__title-wrap">
+                                <a href="" class="product__title">
+                                    Hakka Green 2
+                                </a>
+                            </div>
+                            <div class="product__price-wrap">
+                                <div class="product__price-before-discount clearfix_">
+                                    <div class="product__price">
+                                        1 800 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 800 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="product__price-final clearfix_">
+                                    <div class="product__price">
+                                        1 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                    <div class="product__price-old">
+                                        1 000 000 <span class="product__price-text">руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__addition">
+                                <div class="count__cart flex_row">
+                                    <form class="count__form" method="post" action="" data-trigger="spinner">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="down">-</button>
+                                        <input type="text" class="count__form-el count__form-val" value="1" data-rule="quantity">
+                                        <button type="button" class="count__form-el count__form-btn" data-spin="up">+</button>
+                                    </form>
+                                    <div class="btn__wrap btn_red_theme">
+                                        <a href="" class="btn">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="addition__info clearfix_">
+                                    <a href="" class="addition__info-btn addition__info-btn-liked addition__info-btn-active"></a>
+                                    <a href="" class="addition__info-btn addition__info-btn-compare"></a>
+                                    <div class="addition__info-stock">
+                                        В наличии: <span class="addition__info-stock-count">200 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__marks">
+                                <div class="product__mark product__mark_popular"></div>
+                                <div class="product__mark product__mark_new"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     </div>
