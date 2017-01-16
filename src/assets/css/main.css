@@ -3182,7 +3182,7 @@ body .tire__service-banner{
 
 .contacts-tabs-wrap{
     margin-top: 20px;
-    margin-bottom: 45px;
+    margin-bottom: 65px;
 }
 .contacts-tabs{
     margin-bottom: 12px;
@@ -3234,7 +3234,24 @@ body .tire__service-banner{
     width: 74.3362%;
     margin: 0 auto;
 }
+.field__label-sm{
+    width: 32%;
+}
 
+.text-content{
+    font-size: .875rem;
+    font-family: OpenSans-Regular;
+    color: #636363;
+    line-height: 1.4;
+}
+.text-content>*{
+    margin-bottom: 30px;
+}
+.text-content ul li{
+    padding-left: 15px;
+    background: url("../images/list-disk.png") no-repeat left center;
+    margin-bottom: 7px;
+}
 
 /************************* Перебиваем стили bx-slider *************************/
 
