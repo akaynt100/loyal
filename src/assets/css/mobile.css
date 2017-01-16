@@ -73,6 +73,15 @@
         margin-bottom: 0;
     }
 
+    .seo-text.mobile-theme_gray {
+        background-color: #f2f2f2;
+        margin-top: 40px;
+    }
+
+    .seo-text.mobile-theme_gray .title{
+        font-size: 1.25rem;
+    }
+
     /* - - - - - - - - - - - - - header - - - - - - - - - - - -*/
     .header__top {
         display: none;
@@ -116,7 +125,6 @@
         font-family: OpenSans-Bold;
         text-align: center;
         color: #000;
-        /*position: relative;*/
     }
 
     .header__work-time {
@@ -418,7 +426,7 @@
     .catalog__el {
         width: 100%;
         min-width: 280px;
-        margin: 0;
+        margin: 21px 0 0;
         padding: 20px 23px 27px;
     }
 
@@ -434,7 +442,6 @@
         margin-top: 33px;
         margin-left: calc(100% - 104px);
         display: block;
-        margin-bottom: 20px;
     }
 
     .product__title {
@@ -448,7 +455,7 @@
 
     .rightCatalogArrow {
         position: absolute;
-        right: 0;
+        right: 3px;
         top: 0;
         width: 15px;
         height: 100%;
@@ -456,7 +463,7 @@
 
     .leftCatalogArrow {
         position: absolute;
-        left: 0;
+        left: 3px;
         top: 0;
         width: 15px;
         height: 100%;
@@ -842,6 +849,10 @@
         margin-right: 0;
     }
 
+    .product-wrap {
+        padding-bottom: 25px;
+    }
+
     .product-advantages {
         justify-content: center;
     }
@@ -983,8 +994,9 @@
         display: none;
     }
 
-    .product__articles-mobile {
-        margin-bottom: 40px;
+    .product__articles-shop, .product__articles-reviews,
+    .product__articles-pay, .product__articles-shipping, .product__articles-warranty {
+        margin-bottom: 30px;
     }
 
     .title-mobile {
@@ -1014,7 +1026,7 @@
     }
 
     .product__articles-inner-mobile {
-        padding: 21px 17px 17px;
+        padding: 25px 17px;
         background: repeating-linear-gradient(
                 -50deg,
                 #f1f1f1,
@@ -1023,7 +1035,6 @@
                 #fff 5px
         );
         font-family: 'OpenSans-Regular', sans-serif;
-
     }
 
     .product__articles-inner-mobile .bold {
@@ -1091,14 +1102,16 @@
         height: 90px;
         margin-top: 10px;
         padding: 10px;
+        margin-bottom: -13px;
     }
 
-    .shop-phone-accordion > :checked + label:before {
-        transform: rotate(180deg);
+    .shop-phone-accordion > :checked + label .shop-arrow-toggle::after {
+        transform: rotate(0deg);
     }
 
     .shop-phone-number {
         display: block;
+        line-height: 1rem;
     }
 
     .shop-phone-block:last-of-type {
@@ -1119,6 +1132,7 @@
         padding: 0;
         color: #1b1b1b;
         font-size: .875rem;
+        line-height: 1.25;
 
     }
 
@@ -1158,6 +1172,63 @@
         right: -23px;
     }
 
+    .product__articles-inner-mobile .reviewMoreImage img {
+        margin-right: 10px;
+    }
+
+    .product__articles-pay h3 {
+        font-family: 'OpenSans-Bold', sans-serif;
+        font-size: .875rem;
+        color: #1b1b1b;
+        margin: 17px 0 5px;
+    }
+
+    .product__articles-pay h3:first-of-type {
+        margin-top: 0;
+    }
+
+    .product__articles-pay p {
+        font-family: 'OpenSans-Regular', sans-serif;
+        font-size: 0.75rem;
+        color: #5b5b5b;
+        line-height: 14px;
+    }
+
+    .product__articles-shipping b {
+        font-family: 'OpenSans-Semibold', sans-serif;
+        font-size: .875rem;
+    }
+
+    .product__articles-shipping {
+        font-family: 'OpenSans-Regular', sans-serif;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+
+    }
+
+    .product__articles-shipping ul:first-of-type {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+
+    .product__articles-shipping li, .product__articles-shipping p {
+        margin-bottom: 3px;
+    }
+
+    .product__articles-warranty b {
+        font-family: 'OpenSans-Semibold', sans-serif;
+        font-size: .875rem;
+    }
+
+    .product__articles-warranty {
+        font-family: 'OpenSans-Regular', sans-serif;
+        font-size: 0.875rem;
+        line-height: 1rem;
+    }
+
+    .product__articles-warranty p {
+        margin-bottom: 9px;
+    }
 
 
 

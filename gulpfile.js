@@ -137,7 +137,9 @@ gulp.task('browser-sync', function() {
         //index: 'loyal_articles.html'
         //index: 'loyal_articles.html'
         //index: 'catalog.html'
-        index: 'basket.html'
+        //index: 'basket.html'
+        index: 'product.html'
+
     });
 });
 
