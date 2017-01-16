@@ -45,7 +45,7 @@ var config = {
     root: "build/", 
     open: false, 
     wait: 1000, 
-    mount: [] 
+    mount: []
 };
 
 gulp.task('html:build', function () {
@@ -131,7 +131,13 @@ gulp.task('browser-sync', function() {
         server: {
             baseDir: "build/"
         },
-        //"other page"
+        //index: 'loyal_404.html'
+        //index: 'loyal_about.html'
+        //index: 'action.html'
+        //index: 'loyal_articles.html'
+        //index: 'loyal_articles.html'
+        //index: 'catalog.html'
+        index: 'basket.html'
     });
 });
 
