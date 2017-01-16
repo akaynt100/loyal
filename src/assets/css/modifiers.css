@@ -491,3 +491,10 @@ body .white_text{
     color: #636363;
     line-height: 1.4;
 }
+
+.default_link{
+    display: inline-block;
+    color: #3798cb;
+    border-bottom: 1px solid #3798cb;
+    line-height: 1;
+}
