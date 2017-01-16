@@ -44,9 +44,9 @@ $(document).ready(function () {
         pagerCustom: '#product__gallery-list'
     });
     $('.product__gallery-list').bxSlider({
-        minSlides: 5,
+        minSlides: 3,
         maxSlides: 5,
-        slideWidth: 75,
+        slideWidth: 70,
         slideMargin: 15,
         pager: false,
         nextSelector: '#product__gallery-next',
@@ -234,8 +234,6 @@ function findParent(el,class_){
         return findParent(parent,class_);
     }
 }
-
-
 
 //sliders ****************************************************
 $('.sliderBrand').slick({
