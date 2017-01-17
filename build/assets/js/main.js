@@ -149,7 +149,6 @@ function popUpInit(){
     };
 
     var preparation = function () {
-        //hideAll();
         popUp.overlay.fadeIn('slow');
     };
 
@@ -161,19 +160,6 @@ function popUpInit(){
         });
 
     };
-
-    //var showSuccessWindow = function () {
-    //    hidePopUps();
-    //    setTimeout(function () {
-    //        hideAll();
-    //    },2000);
-    //};
-
-    //var openServicePopUp = function (title_) {
-    //    var title = popUp.repairForm.find('.cta__title-b');
-    //    title.html(title_);
-    //    popUp.repairForm.fadeIn('slow');
-    //};
 
     return function () {
         bindSettings();
@@ -400,8 +386,17 @@ $(window).width(function(){
             nextArrow: '<div class="rightCatalogArrow"><img src="assets/images/scroll-arrow-right.png"></div>',
             prevArrow: '<div class="leftCatalogArrow"><img src="assets/images/scroll-arrow-left.png"></div>'
         });
+        $('.reviewMoreImage').slick({
+            arrows: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            draggable: true,
+            nextArrow: '<div class="rightCatalogArrow"><img src="assets/images/scroll-arrow-right.png"></div>',
+            prevArrow: '<div class="leftCatalogArrow"><img src="assets/images/scroll-arrow-left.png"></div>'
+        });
     } else {
-        //$('.mobile-slider').unslick();
+        $('.mobile-slider').unslick();
+        $('.reviewMoreImage').unslick();
     }
 });
 

@@ -73,12 +73,16 @@
         margin-bottom: 0;
     }
 
+    .m_border-bottom {
+        border-bottom: 1px solid #cccccc;
+    }
+
     .seo-text.mobile-theme_gray {
         background-color: #f2f2f2;
         margin-top: 40px;
     }
 
-    .seo-text.mobile-theme_gray .title{
+    .seo-text.mobile-theme_gray .title {
         font-size: 1.25rem;
     }
 
@@ -1230,14 +1234,7 @@
         margin-bottom: 9px;
     }
 
-
-
-
-
-
-
-
-        /* - - - - - - - - - - - - - catalog - - - - - - - - - - - -*/
+    /* - - - - - - - - - - - - - catalog - - - - - - - - - - - -*/
     .catalog__el_grid-full-width .catalog__el-title {
         border-color: transparent;
     }
@@ -1283,6 +1280,218 @@
         margin-bottom: 45px;
     }
 
+    /* - - - - - - - - - - - - - keeping - - - - - - - - - - - -*/
+    .keeping__principles-item-img {
+        width: 92px;
+        float: right;
+    }
+
+    .keeping__principles-item-img img {
+        width: 72px;
+        float: right;
+    }
+
+    .keeping__principles-item-desc {
+        width: auto;
+        /*float: left;*/
+        float: none;
+    }
+
+    /* - - - - - - - - - - - - - comment - - - - - - - - - - - -*/
+    .reviewMore {
+        padding-right: 0;
+    }
+
+    .reviewMoreImage {
+        width: 82%;
+        margin: 0 auto 40px;
+    }
+
+    .reviewMoreImage img {
+        margin-left: 5px;
+        margin-right: 5px;
+        height: auto;
+        max-height: none;
+    }
+
+    .reviewAdvantages, .reviewDisadvantages {
+        display: block;
+    }
+
+    .reviewAdvantages {
+        margin-bottom: 5px;
+    }
+
+    .reviewDisadvantages {
+        margin-top: 0;
+    }
+
+    .reviewMoreImage .rightCatalogArrow {
+        right: -25px;
+    }
+
+    .reviewMoreImage .leftCatalogArrow {
+        left: -35px;
+    }
+
+    /* - - - - - - - - - - - - - carwash - - - - - - - - - - - -*/
+    .service {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 40px;
+    }
+
+    .service__image {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .service__image img {
+        width: 100%;
+    }
+
+    .service__info {
+        width: 100%;
+        float: none;
+        padding: 12px 20px 28px;
+        margin-top: -5px;
+    }
+
+    .service__info .title {
+        padding-right: 50%;
+    }
+
+    .service__bottom {
+        display: none;
+    }
+
+    .service__contacts-item {
+        border-right: none;
+        float: none;
+    }
+
+    .service__contacts-item-title {
+        margin-bottom: 6px;
+    }
+
+    .service__contacts-phones {
+        margin-bottom: 27px;
+    }
+
+    .service__contacts-phones span {
+        display: block;
+    }
+
+    .download-btn {
+        width: 200px;
+        height: 60px;
+        margin: 0 auto;
+        padding: 14px 25px 16px 53px;
+    }
+
+    .download-btn a {
+        color: #fff;
+        font-family: 'OpenSans-Bold', sans-serif;
+        font-size: 0.875rem;
+        line-height: 0.9375rem;
+        position: relative;
+    }
+
+    .download-btn a::before {
+        position: absolute;
+        content: "";
+        background-image: url("../images/download.png");
+        width: 16px;
+        height: 20px;
+        left: -31px;
+        top: 8px;
+    }
+
+    /* - - - - - - - - - - - - - optovym сlientam - - - - - - - - - - - -*/
+    .wholesaleClient .file:nth-of-type(3) {
+        margin-left: 0;
+    }
+
+    .passengerTiresList ul:first-of-type {
+        margin-right: 20px;
+        margin-bottom: 25px;
+    }
+
+    .alloyWheels {
+        margin-left: 0;
+    }
+
+    /* - - - - - - - - - - - - - news - - - - - - - - - - - -*/
+    .newsBlock {
+        margin-left: 0;
+        padding-top: 25px;
+    }
+
+    .newsItem {
+        max-width: none;
+        margin-left: 0;
+        margin-bottom: 25px;
+        display: block;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .newsItemImage img {
+        width: 100%;
+    }
+
+    .newsItem.mobile-none, .newsItemImageBackground {
+        display: none;
+    }
+
+    .newsItem:hover .newsItemTitle {
+        color: inherit;
+    }
+
+    .newsItemTitle {
+        margin-bottom: 15px;
+    }
+
+    /* - - - - - - - - - - - - - comments - - - - - - - - - - - -*/
+    .commentsBlock, .commentsLine {
+        border: none;
+    }
+
+    .commentsItem:nth-of-type(even) {
+        margin-left: 0;
+    }
+
+    .commentsItem {
+        width: 100%;
+        border: 1px solid #ccc;
+        margin-bottom: -1px;
+        padding: 20px;
+        height: 310px;
+    }
+
+    .commentsHeader {
+        margin: 0;
+    }
+
+    .commentsItemText {
+        margin-top: 20px;
+    }
+
+    .commentsItem .rating {
+        margin-top: 7px;
+    }
+
+    .pagination-wrap.mobile-fl_l {
+        float: left;
+    }
+
+    .readMore a {
+        margin-left: 3%;
+        visibility: visible;
+        border-bottom: 1px solid #3798cb;
+        line-height: .875rem;
+    }
+
     /* - - - - - - - - - - - - - 404 - - - - - - - - - - - -*/
     .content404, .backgroundImage404 {
         height: 480px;
@@ -1323,7 +1532,8 @@
     }
 
     .btn_red_theme.btnMain, .btn_red_theme.btnSiteMap,
-    .btn_red_theme.btnMain .btn, .btn_red_theme.btnSiteMap .btn {
+    .btn_red_theme.btnMain .btn, .btn_red_theme.btnSiteMap .btn,
+    .btn_red_theme.btnComments, .btn_red_theme.btnComments .btn {
         border-radius: 40px;
     }
 
