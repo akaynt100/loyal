@@ -592,6 +592,7 @@ article {
     font-family: 'OpenSans-Bold', sans-serif;
     margin-top: 63px;
     margin-bottom: 18px;
+    text-transform: uppercase;
 }
 
 .sliderBorder {
