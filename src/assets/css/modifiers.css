@@ -348,13 +348,15 @@ body .white_text{
     /*margin-left: 1.78%;*/
     /*margin-left: 2.7745%;*/
     /*margin-left: 2.7%;*/
-    margin-right: 2.68%;
-}
-.catalog__el_grid:nth-child(3n){
+    /*margin-right: 2.68%;*/
+    margin-left: 15px;
     margin-right: 0;
 }
+.catalog__el_grid:nth-child(3n){
+    /*margin-right: 0;*/
+}
 .catalog__el_grid.catalog__el:nth-child(4n+4){
-    margin-right: 2.68%;
+    /*margin-right: 2.68%;*/
 }
 .cart-top__btn_active,
 .blue_theme{
@@ -503,4 +505,7 @@ body .white_text{
     color: #3798cb;
     border-bottom: 1px solid #3798cb;
     line-height: 1;
+}
+.gr_cell{
+    background-color: #f7f7f7;
 }

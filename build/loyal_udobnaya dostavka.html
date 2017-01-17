@@ -494,19 +494,19 @@
                             мы в социальных сетях
                         </div>
                         <div class="flex_row">
-                            <a href="" class="footer__social-link">
+                            <a href="" class="social-link footer__social-link">
                                 <i class="fa fa-vk" aria-hidden="true"></i>
                             </a>
-                            <a href="" class="footer__social-link">
+                            <a href="" class="social-link footer__social-link">
                                 <i class="fa fa-facebook" aria-hidden="true"></i>
                             </a>
-                            <a href="" class="footer__social-link">
+                            <a href="" class="social-link footer__social-link">
                                 <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
                             </a>
-                            <a href="" class="footer__social-link">
+                            <a href="" class="social-link footer__social-link">
                                 <i class="fa fa-twitter" aria-hidden="true"></i>
                             </a>
-                            <a href="" class="footer__social-link">
+                            <a href="" class="social-link footer__social-link">
                                 <i class="fa fa-google-plus" aria-hidden="true"></i>
                             </a>
                         </div>
@@ -553,6 +553,373 @@
                 </a>
             </div>
         </div>
+    </div>
+</div>
+<div class="popup-overlay">
+    <div class="popup registration-form">
+        <div class="user-form popup-form">
+            <div class="user-form__title popup-title">
+                Регистрация
+            </div>
+            <div class="user-form__content">
+                <p class="common_text text_center">
+                    Воспользуйтесь любым из приведенных
+                    ниже социальных сервисов и ваша
+                    учетная запись будет создана.
+                </p>
+                <div class="popup__social-links flex_row">
+                    <a href="" class="social-link popup__social-link">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                    <a href="" class="social-link popup__social-link">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="" class="social-link popup__social-link">
+                        <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                    </a>
+                    <a href="" class="social-link popup__social-link">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="" class="social-link popup__social-link">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <form action="" method="post">
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Логин<span class="blue_text">*</span>
+                            </span>
+                            <input class="form__field" type="text" placeholder="Введите логин">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Имя
+                            </span>
+                            <input class="form__field" type="text" placeholder="Введите ваше имя">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Фамилия
+                            </span>
+                            <input class="form__field" type="text" placeholder="Введите вашу фамилию">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Электронная почта<span class="blue_text">*</span>
+                            </span>
+                            <input class="form__field" type="email" placeholder="Введите e-mail">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Телефон
+                            </span>
+                            <input class="form__field phone-mask" type="text">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Введите пароль<span class="blue_text">*</span>
+                            </span>
+                            <input class="form__field" type="password" placeholder="Введите пароль">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Повторите пароль<span class="blue_text">*</span>
+                            </span>
+                            <input class="form__field" type="password" placeholder="Повторите пароль">
+                        </label>
+                    </div>
+                    <div class="submit__btn-wrap">
+                        <div class="btn__wrap btn_red_theme">
+                            <input type="submit" class="btn" value="Зарегистрироваться">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup__close"></div>
+    </div>
+    <div class="popup login-form">
+        <div class="user-form popup-form">
+            <div class="user-form__title popup-title">
+                Войти
+            </div>
+            <div class="user-form__content">
+                <form action="" method="post">
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Логин<span class="blue_text">*</span>
+                            </span>
+                            <input class="form__field" type="text" placeholder="Введите логин">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Пароль<span class="blue_text">*</span>
+                            </span>
+                            <input class="form__field" type="password" placeholder="Введите пароль">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__title custom-checkbox">
+                            <input type="checkbox" value="">
+                            <span class="checkbox__replacer">Запомнить меня</span>
+                        </label>
+                    </div>
+                    <p class="popup-text-block common_text text_center">
+                        Если вы не зарегистрированы<br>
+                        заполните форму <a href="" class="default_link">Регистрации</a>
+                    </p>
+                    <p class="popup-text-block common_text text_center">
+                        <a href="" class="default_link">Забыли пароль?</a>
+                    </p>
+                    <div class="submit__btn-wrap">
+                        <div class="btn__wrap btn_red_theme">
+                            <input type="submit" class="btn" value="Войти">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup__close"></div>
+    </div>
+    <div class="popup review-form">
+        <div class="user-form popup-form">
+            <div class="user-form__title popup-title">
+                Оставить отзыв
+            </div>
+            <div class="user-form__content">
+                <form action="" method="post">
+                    <div class="field__wrap">
+                        <span class="field__title">
+                            Оценка<span class="blue_text">*</span>
+                        </span>
+                        <div class="product__rating-wrap ">
+                            <label class="rating-active">
+                                <select>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Имя<span class="blue_text">*</span>
+                            </span>
+                            <input class="form__field" type="text" placeholder="Введите ваше имя">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Фамилия<span class="blue_text">*</span>
+                            </span>
+                            <input class="form__field" type="text" placeholder="Введите вашу фамилию">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Электронная почта<span class="blue_text">*</span>
+                            </span>
+                            <input class="form__field" type="email" placeholder="Введите e-mail">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Сообщение<span class="blue_text">*</span>
+                            </span>
+                            <textarea class="form__field custom__textarea" placeholder="Введите сообщение"></textarea>
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Достоинства
+                            </span>
+                            <textarea class="form__field custom__textarea" placeholder="Введите сообщение"></textarea>
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Недостатки
+                            </span>
+                            <textarea class="form__field custom__textarea" placeholder="Введите сообщение"></textarea>
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label custom-input-file">
+                            <span class="field__title">
+                                Прикрепить файл
+                            </span>
+                            <input type="file" name="">
+                            <span class="clearfix_">
+                                <input type="text" class="form__field custom-input-file__text" value="Файл не выбран" readonly>
+                                <span class="custom-input-file__btn btn blue_theme">Обзор</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="submit__btn-wrap">
+                        <div class="btn__wrap btn_red_theme">
+                            <input type="submit" class="btn" value="Оставить отзыв">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup__close"></div>
+    </div>
+    <div class="popup feedback-form">
+        <div class="user-form popup-form">
+            <div class="user-form__title popup-title">
+                Форма обратной связи
+            </div>
+            <div class="user-form__content">
+                <form action="" method="post">
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Имя
+                            </span>
+                            <input class="form__field" type="text" placeholder="Введите ваше имя">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Телефон<span class="blue_text">*</span>
+                            </span>
+                            <input class="form__field phone-mask" type="text">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Вопрос
+                            </span>
+                            <textarea class="form__field custom__textarea" placeholder="Введите сообщение"></textarea>
+                        </label>
+                    </div>
+                    <div class="submit__btn-wrap">
+                        <div class="btn__wrap btn_red_theme">
+                            <input type="submit" class="btn" value="Отправить">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup__close"></div>
+    </div>
+    <div class="popup user-callback-form">
+        <div class="user-form popup-form">
+            <div class="user-form__title popup-title">
+                Обратный звонок
+            </div>
+            <div class="user-form__content">
+                <form action="" method="post">
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Имя
+                            </span>
+                            <input class="form__field" type="text" placeholder="Введите ваше имя">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Телефон<span class="blue_text">*</span>
+                            </span>
+                            <input class="form__field phone-mask" type="text">
+                        </label>
+                    </div>
+                    <div class="submit__btn-wrap">
+                        <div class="btn__wrap btn_red_theme">
+                            <input type="submit" class="btn" value="Отправить">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup__close"></div>
+    </div>
+    <div class="popup service-form">
+        <div class="user-form popup-form">
+            <div class="user-form__title popup-title">
+                Пошив и перетяжка салона
+            </div>
+            <div class="user-form__content">
+                <form action="" method="post">
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Имя
+                            </span>
+                            <input class="form__field" type="text" placeholder="Введите ваше имя">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Телефон<span class="blue_text">*</span>
+                            </span>
+                            <input class="form__field phone-mask" type="text">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Телефон<span class="blue_text">*</span>
+                            </span>
+                            <input class="form__field phone-mask" type="text">
+                        </label>
+                    </div>
+                    <div class="field__wrap">
+                        <label class="field__label">
+                            <span class="field__title">
+                                Выберите услугу
+                            </span>
+                            <select class="form__field custom__select popup-custom__select">
+                                <option value="" disabled>Перетяжка руля</option>
+                                <option value="">Перетяжка руля</option>
+                                <option value="">Перетяжка руля</option>
+                                <option value="">Перетяжка руля</option>
+                                <option value="">Перетяжка руля</option>
+                                <option value="">Перетяжка руля</option>
+                                <option value="">Перетяжка руля</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="submit__btn-wrap">
+                        <div class="btn__wrap btn_red_theme">
+                            <input type="submit" class="btn" value="Отправить">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup__close"></div>
     </div>
 </div>
 <script src="assets/js/libs.js"></script>

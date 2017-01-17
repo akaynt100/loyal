@@ -414,21 +414,24 @@ body{width: 100%;}
     margin-right: 0;
 }
 
-.footer__social-link{
+.social-link{
     font-size: 1.5rem;
-    color: #a9a9a9;
     width: 45px;
     padding: 8px 0;
     display: block;
     text-align: center;
     border-radius: 50px;
-    border: 2px solid #4c4c4c;
+    border: 2px solid transparent;
     margin-right: 12px;
 }
-.footer__social-link:last-child{
+.footer__social-link{
+    color: #a9a9a9;
+    border-color:  #4c4c4c;
+}
+.social-link:last-child{
     margin-right: 0;
 }
-.footer__social-link:hover{
+.social-link:hover{
     color: #3798cb;
 }
 
@@ -1732,6 +1735,7 @@ body{width: 100%;}
 .catalog-grid-inner-page{
     margin-top: -21px;
     /*margin-left: -1.8%;*/
+    margin-left: -15px;
 }
 
 
@@ -2572,6 +2576,10 @@ body .tire__service-banner{
     margin-top: 9px;
 }
 
+.form-divider{
+    margin: 20px 0;
+}
+
 /************************* product *************************/
 .product-advantages.container{
     line-height: 1;
@@ -3371,6 +3379,306 @@ body .tire__service-banner{
     cursor: pointer;
     border-bottom: 1px solid #ffffff;
 }
+
+/************************* questions *************************/
+
+.questions{
+    margin-top: 25px;
+}
+.question{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.question__text{
+    font-family: OpenSans-Bold;
+    font-size: 1.125rem;
+    margin-left: 20px;
+    line-height: 1;
+    color: #1b1b1b;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.questions__btn{
+    font-family: OpenSans-Light;
+    font-size: 50px;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    background-color: #3eabe6;
+    text-align: center;
+}
+.questions__btn-inner{
+    width: 50px;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.question-answer{
+    padding-left: 70px;
+    /*max-height: 0;*/
+    overflow: hidden;
+    display: none;
+}
+.question-answer>*{
+    margin-bottom: 20px;
+}
+.question-answer>*:last-child{
+    margin-bottom: 0;
+}
+
+.question__opened .questions__btn-inner{
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+.question__opened .question__text{
+    color: #3eabe6;
+}
+
+/************************* pop-ups *************************/
+
+.popups{
+    padding-bottom: 400px;
+    font-family: OpenSans-Regular;
+}
+
+.popup-overlay{
+    position: absolute;
+    z-index: 10000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,125,191,0.95);
+    display: none;
+}
+.popup{
+    position: relative;
+    margin: 110px auto 0 auto;
+    width: 350px;
+    display: none;
+}
+.popup-form{
+    width: 100%;
+    border: 0;
+}
+.popup-title{
+    background-color: #ffffff;
+    padding-bottom: 19px;
+    padding-top: 19px;
+    font-size: 0.875rem;
+}
+.popup__close{
+    position: absolute;
+    width: 40px;
+    height: 14px;
+    right: 0;
+    top: -24px;
+    background: url(../images/close-popup.png) right center no-repeat;
+    cursor: pointer;
+}
+
+.popup__social-links{
+    margin: 15px 0;
+}
+.popup__social-link{
+    color: #636363;
+    border-color:  #dcdcdc;
+}
+
+.popup-text-block{
+    margin-top: 20px;
+}
+.custom-checkbox{
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+.custom-checkbox input[type=checkbox]{
+    position: absolute;
+    display: none;
+}
+.checkbox__replacer{
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 1px;
+    height: 16px;
+    background: url(../images/popup-checkbox-sprite.png) no-repeat;
+}
+label.custom-checkbox input[type=checkbox] + .checkbox__replacer{
+    background-position: left 0;
+}
+label.custom-checkbox input[type=checkbox]:checked + .checkbox__replacer{
+    background-position: left 104%;
+}
+
+.rating-active{
+    display: block;
+}
+.custom-input-file{
+    position: relative;
+}
+.custom-input-file input[type=file]{
+    display: none;
+    position: absolute;
+}
+.custom-input-file__text{
+    width: 58.1818%;
+    float: left;
+    margin-top: 0;
+}
+.custom-input-file__btn{
+    float: right;
+    max-width: 100px;
+    min-width: 100px;
+    padding: 14px 10px 13px 10px;
+}
+.custom-input-file__btn:hover{
+    border-radius: 0;
+}
+.popup-custom__select{
+    background: url(../images/input-dropdown-popup-arrow.png) right 14px center no-repeat #fff;
+}
+
+/************************* compare *************************/
+
+
+.compare-products{
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 82.7433%;
+    float: right;
+    margin-bottom: 20px;
+}
+.compare-product{
+    width: 22.4598%;
+    position: relative;
+}
+.compare-product__image{
+    width: 210px;
+    height: 210px;
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    text-align: center;
+}
+.compare-product__image-inner{
+    width: 190px;
+    height: 187px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.compare-product__image img{
+    max-height: 100%;
+}
+.compare-product__title{
+    margin: 10px 0;
+    font-family: OpenSans-Bold;
+    font-size: 1.125rem;
+    color: #1b1b1b;
+    line-height: 1.35;
+    text-transform: uppercase;
+}
+.compare-product__price{
+    font-family: OpenSans-Regular;
+    font-size: 1rem;
+    color: #3798cb;
+}
+.compare-table-wrap{
+    font-family: OpenSans-Regular;
+    font-size: 0.875rem;
+    color: #1b1b1b;
+    line-height: 1.35;
+}
+.compare-table{
+    width: 100%;
+}
+.compare-table td,
+.compare-table th{
+    padding: 15px 5px 15px 15px;
+}
+.compare-table th {
+    text-align: left;
+    background-color: #e6e6e6;
+}
+.row-title{
+    width: 16.5%;
+}
+
+
+.compare-table-row{
+
+}
+.compare-table-row-title,
+.compare-table-cell{
+    padding: 15px 5px 15px 15px;
+}
+.compare-table-row-title{
+    background-color: #e6e6e6;
+}
+.compare-table-flex-row{
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content:flex-end;
+    -ms-flex-pack: end;
+    align-items: stretch;
+    -ms-flex-align: stretch;
+}
+
+.compare-table-cell{
+
+}
+.compare-table-cell-1-5{
+    width: 20%;
+}
+.compare-table-cell-1-4{
+    width: 25%;
+}
+.compare-table-cell-1-3{
+    width: 33.3333%;
+}
+.compare-table-cell-1-2{
+    width: 50%;
+}
+
+.compare-inner-table.compare-characteristics .compare-table-row:nth-child(odd) .compare-table-cell{
+    background-color: #f7f7f7;
+}
+.compare-inner-table.compare-characteristics .compare-table-row:nth-child(odd) .compare-table-cell:first-child {
+    background-color: #ffffff;
+}
+
+.compare-product__close{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    background: url("../images/compare-close.png") no-repeat left bottom;
+}
+.compare-btn-reset.btn{
+    padding: 13px 15px 12px 40px;
+    color: #a0a0a0;
+    font-family: OpenSans-Regular;
+    background: url("../images/compare-close.png") no-repeat 20px center;
+}
+.compare-btn-reset.btn:hover {
+    border-radius: 0;
+}
+.compare-btn-reset-wrap{
+    margin-bottom: 25px;
+}
+
 
 /************************* Перебиваем стили bx-slider *************************/
 
