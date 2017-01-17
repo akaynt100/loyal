@@ -482,6 +482,9 @@ body .white_text{
 .sm_text{
     font-size: 0.75rem;
 }
+.md_text{
+    font-size: 0.875rem;
+}
 .aside_indent_sm{
     margin-bottom: 15px;
 }
@@ -490,6 +493,9 @@ body .white_text{
     font-size: 0.875rem;
     color: #636363;
     line-height: 1.4;
+}
+.uppercase{
+    text-transform: uppercase;
 }
 
 .default_link{
