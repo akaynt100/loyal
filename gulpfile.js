@@ -135,10 +135,15 @@ gulp.task('browser-sync', function() {
         //index: 'loyal_about.html'
         //index: 'action.html'
         //index: 'loyal_articles.html'
-        //index: 'loyal_articles.html'
         //index: 'catalog.html'
         //index: 'basket.html'
-        index: 'product.html'
+        //index: 'product.html'
+        //index: 'carwash.html'
+        //index: 'keeping.html'
+        //index: 'loyal_comment.html'
+        //index: 'loyal_comments.html'
+        //index: 'loyal_news.html'
+        index: 'loyal_optovym сlientam.html'
 
     });
 });

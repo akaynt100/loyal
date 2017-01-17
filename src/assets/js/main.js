@@ -282,8 +282,17 @@ $(window).width(function(){
             nextArrow: '<div class="rightCatalogArrow"><img src="assets/images/scroll-arrow-right.png"></div>',
             prevArrow: '<div class="leftCatalogArrow"><img src="assets/images/scroll-arrow-left.png"></div>'
         });
+        $('.reviewMoreImage').slick({
+            arrows: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            draggable: true,
+            nextArrow: '<div class="rightCatalogArrow"><img src="assets/images/scroll-arrow-right.png"></div>',
+            prevArrow: '<div class="leftCatalogArrow"><img src="assets/images/scroll-arrow-left.png"></div>'
+        });
     } else {
         $('.mobile-slider').unslick();
+        $('.reviewMoreImage').unslick();
     }
 });
 

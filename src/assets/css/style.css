@@ -25,19 +25,23 @@ article {
     padding-top: 19px;
 }
 
-.underline {
+.underline, .passengerTiresList a, .alloyWheels a {
     color: #3798cb;
     text-decoration: none;
     position: relative;
 }
 
-.underline::before {
+.passengerTiresList a::before, .alloyWheels a::before {
     position: absolute;
     content: "";
     height: 1px;
     width: 100%;
     background-color: #3798cb;
     bottom: 1px;
+}
+
+.underline {
+    border-bottom: 1px solid #3798cb;
 }
 
 .boldPointList li::before {
@@ -349,6 +353,7 @@ article {
     display: inline-block;
     vertical-align: top;
     height: 286px;
+    position: relative;
 }
 
 .commentsItem:nth-of-type(even) {
@@ -388,11 +393,13 @@ article {
     padding-left: 4.97335701598579%; /* 28/563 */
     padding-right: 3.552397868561279%; /* 20/563*/
     margin-bottom: 40px;
+    height: 140px;
+    overflow: hidden;
 }
 
-.readMore {
+.readMore a {
     color: #3798cb;
-    margin-left: 2.573203194321207%; /* 29/1127 */
+    margin-left: 4.5%; /* 29/1127 */
     position: absolute;
     bottom: 20px;
     visibility: hidden;
@@ -402,7 +409,7 @@ article {
     cursor: pointer;
 }
 
-.commentsItem:hover .readMore {
+.commentsItem:hover .readMore a {
     visibility: visible;
 }
 
@@ -862,6 +869,7 @@ article {
 
 .reviewAdvantages span, .reviewDisadvantages span {
     color: #1b1b1b;
+    font-family: 'OpenSans-Semibold', sans-serif;
 }
 
 .reviewMoreImage img {
