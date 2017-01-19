@@ -73,6 +73,10 @@
         margin-bottom: 0;
     }
 
+    .mobile-bold {
+        font-family: 'OpenSans-Bold', sans-serif !important;
+    }
+
     .m_border-bottom {
         border-bottom: 1px solid #cccccc;
     }
@@ -84,6 +88,10 @@
 
     .seo-text.mobile-theme_gray .title {
         font-size: 1.25rem;
+    }
+
+    .seo-text.block.desktop-none {
+        padding-top: 30px;
     }
 
     /* - - - - - - - - - - - - - header - - - - - - - - - - - -*/
@@ -1420,6 +1428,109 @@
 
     .alloyWheels {
         margin-left: 0;
+    }
+
+    /* - - - - - - - - - - - - - order-form - - - - - - - - - - - -*/
+    .user-form {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .user-form:nth-of-type(2) {
+        margin-bottom: 30px;
+    }
+
+    .user-form__content {
+        padding: 25px 20px;
+    }
+
+    /* - - - - - - - - - - - - - payLine - - - - - - - - - - - -*/
+    .payLine img {
+        float: none;
+        margin-right: 0;
+        width: auto;
+    }
+
+    .payLine {
+        text-align: center;
+    }
+
+    .payLine > * {
+        text-align: left;
+    }
+
+    .payLine h4 {
+        margin-top: 20px;
+    }
+
+    .paymentsMethods article {
+        padding-bottom: 10px;
+    }
+
+    /* - - - - - - - - - - - - - udobnaya dostavka - - - - - - - - - - - -*/
+    .shippingCost th:last-child, .shippingCost td:last-child {
+        display: none;
+    }
+
+    .shippingCost th:nth-of-type(2), .shippingCost td:nth-of-type(2) {
+        text-align: right;
+    }
+
+    .shipping label {
+        height: 37px;
+        font-size: .74rem;
+        line-height: 0.875rem;
+        padding: 3px;
+    }
+
+    .shipping label:nth-of-type(2) {
+        line-height: 1.9375rem;
+    }
+
+    .onlineShippingContent {
+        padding: 25px 0 30px;
+    }
+
+    .shipping .container section {
+        border-width: 0 0 1px 0;
+        margin-right: 0;
+        padding: 25px 0 30px;
+        margin-bottom: 0;
+    }
+
+    .shippingCostTitle, .schedule {
+        margin-top: 30px;
+    }
+
+    .warning {
+        padding-left: 15px;
+        padding-right: 7px;
+    }
+
+    /* - - - - - - - - - - - - - my-profile - - - - - - - - - - - -*/
+    .profile__info-wrap, .profile__image-wrap {
+        float: none;
+        width: 100%;
+    }
+
+    .profile__image {
+        margin-top: 17px;
+        margin-bottom: 15px;
+    }
+
+    .profile__info-wrap {
+        margin-top: 30px;
+    }
+
+    .custom-input-file-wrap {
+        width: 170px;
+        margin: auto;
+    }
+
+    /* - - - - - - - - - - - - - opt-sales - - - - - - - - - - - -*/
+    .text-content .phone-banner {
+        margin-bottom: -10px;
+        margin-top: -30px;
     }
 
     /* - - - - - - - - - - - - - news - - - - - - - - - - - -*/

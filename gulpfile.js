@@ -143,7 +143,12 @@ gulp.task('browser-sync', function() {
         //index: 'loyal_comment.html'
         //index: 'loyal_comments.html'
         //index: 'loyal_news.html'
-        index: 'loyal_optovym сlientam.html'
+        //index: 'loyal_optovym сlientam.html'
+        //index: 'loyal_sposoby oplaty.html'
+        //index: 'loyal_udobnaya dostavka.html'
+        //index: 'my-profile.html'
+        //index: 'opt-sales.html'
+        index: 'order-form.html'
 
     });
 });

@@ -63,6 +63,10 @@ article {
     float: right;
 }
 
+.semibold {
+    font-family: 'OpenSans-Semibold', sans-serif;
+}
+
 
 
 /* - - - - - - - - - - - - - paymentsMethods - - - - - - - - - - - -*/
@@ -119,6 +123,7 @@ article {
     float: left;
     margin-right: 2.040816326530612%; /* 24/1176 */
     margin-top: 3px;
+    width: 168px;
 }
 
 .payLine p {
@@ -915,16 +920,11 @@ article {
 
 .shipping label::before {
     content: "";
-    border-color: #3798cb;
     border-style: solid;
-    border-right-width: 9px;
-    border-left-width: 9px;
-    border-top-width: 7px;
-    border-right-color: transparent;
-    border-left-color: transparent;
-    border-bottom-color: transparent;
+    border-width: 9px 10px 0 10px;
+    border-color: #3798cb transparent transparent transparent;
     position: absolute;
-    bottom: -10px;
+    bottom: -8px;
     left: calc(50% - 9px);
     display: none;
 }
@@ -933,11 +933,11 @@ article {
     margin-left: -4px;
     margin-right: -4px;
     width: 33.3333334%;
+    background-color: #3eabe5;
 }
 
 .shipping label:hover {
     cursor: pointer;
-    background-color: #3eabe5;
 }
 
 .shipping input {
