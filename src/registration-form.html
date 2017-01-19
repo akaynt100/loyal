@@ -67,7 +67,7 @@
                                 <span class="field__title">
                                     Юридический адрес<span class="blue_text">*</span>
                                 </span>
-                                <input class="form__field" type="text" placeholder="Почтовый индекс, город, адрес">
+                                <textarea class="form__field custom__textarea" placeholder="Почтовый индекс, город, адрес"></textarea>
                             </label>
                         </div>
                         <div class="field__wrap">
@@ -75,7 +75,7 @@
                                 <span class="field__title">
                                     Почтовый адрес
                                 </span>
-                                <input class="form__field" type="text" placeholder="Почтовый индекс, город, адрес">
+                                <textarea class="form__field custom__textarea" placeholder="Почтовый индекс, город, адрес"></textarea>
                             </label>
                         </div>
                         <div class="field__wrap">
@@ -91,7 +91,7 @@
                                 <span class="field__title">
                                     Банковские реквизиты
                                 </span>
-                                <input class="form__field" type="text" placeholder="Введите реквизиты">
+                                <textarea class="form__field custom__textarea" placeholder="Введите реквизиты"></textarea>
                             </label>
                         </div>
                         <div class="field__wrap">
@@ -109,13 +109,46 @@
                                 </a>
                             </div>
                         </div>
-
-                        <div class="submit__btn-wrap">
-                            <div class="btn__wrap btn_red_theme">
-                                <input type="submit" class="btn" value="Проверить статус">
+                        <div class="field__wrap">
+                            <div class="form-divider bold">Контактное лицо</div>
+                        </div>
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    ФИО контактного лица<span class="blue_text">*</span>
+                                </span>
+                                <input class="form__field" type="text" placeholder="Введите ФИО">
+                            </label>
+                        </div>
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    Мобильный телефон контактного лица<span class="blue_text">*</span>
+                                </span>
+                                <input type="text" class="form__field phone-mask">
+                            </label>
+                        </div>
+                        <div class="field__wrap">
+                            <label class="field__label">
+                                <span class="field__title">
+                                    Электронная почта контактного лица<span class="blue_text">*</span>
+                                </span>
+                                <input type="email" class="form__field" placeholder="Введите e-mail">
+                            </label>
+                        </div>
+                        <div class="field__wrap">
+                            <div class="form-divider text_center">
+                                <label class="field__title custom-checkbox">
+                                    <input type="checkbox" value="">
+                                    <span class="checkbox__replacer">Мною прочитаны и приняты <a href="" class="default_link">условия Договора</a></span>
+                                </label>
                             </div>
                         </div>
-
+                        <div class="submit__btn-wrap">
+                            <div class="btn__wrap btn_red_theme">
+                                <input type="submit" class="btn" value="Отправить">
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

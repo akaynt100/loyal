@@ -6,4 +6,5 @@
 //= libs/trianzoom.js
 //= libs/jquery.barrating.min.js
 //= libs/slick.min.js
+//= libs/jquery.scrollTo.min.js
 //= product-tabs.js

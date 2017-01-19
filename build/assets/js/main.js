@@ -15,7 +15,6 @@ $(document).ready(function () {
                 self.find(".nav__burger").toggleClass("close__btn");
             }
         }
-
     });
 
     mainSliderInit();
@@ -70,7 +69,136 @@ $(document).ready(function () {
     $('.aside__slider').bxSlider();
 
     $('.contacts-tabs-wrap').productTabs('product__sizes-type-active');
+
+    $('.question').on('click', function () {
+       $(this).toggleClass('question__opened')
+           .parent().find('.question-answer')
+           .slideToggle(500);
+    });
+
+    $('.popup-overlay').height(
+        $('.wrapper-inner').height() + $('.footer').height() + $('.user-panel').height() + 40
+    );
+
+    $('.rating-active').find("select").barrating({
+        theme: 'fontawesome-stars',
+        initialRating: "0"
+    });
+
+    var popUp = popUpInit();
+
+    $('.show-registration-form').on('click', function (e) {
+        popUp.showRegistrationForm();
+        e.preventDefault();
+    });
+    $('.show-login-form').on('click', function (e) {
+        popUp.showLoginForm();
+        e.preventDefault();
+    });
+    $('.show-review-form').on('click', function (e) {
+        popUp.showReviewForm();
+        e.preventDefault();
+    });
+    $('.show-feedback-form').on('click', function (e) {
+        popUp.showFeedbackForm();
+        e.preventDefault();
+    });
+    $('.show-user-callback-form').on('click', function (e) {
+        popUp.showCallbackForm();
+        e.preventDefault();
+    });
+    $('.show-service-form').on('click', function (e) {
+        popUp.showServiceForm();
+        e.preventDefault();
+    });
+
+    $(".user-panel__to-top").on("click", function () {
+        $(window).scrollTo($('.header'),500);
+    });
+
 });
+
+
+function popUpInit(){
+    var el = $('.popup-overlay'),
+        popUp = {
+            overlay: el,
+            registrationForm: el.find('.registration-form'),
+            loginForm: el.find('.login-form'),
+            reviewForm: el.find('.review-form'),
+            feedbackForm: el.find('.feedback-form'),
+            callbackForm: el.find('.user-callback-form'),
+            serviceForm: el.find('.service-form')
+        },
+        closeBtns = el.find('.popup__close'),
+        submitBtns = el.find('input[type=submit]');
+
+    var hidePopUps = function () {
+        for(var key in popUp){
+            if(key != 'overlay') popUp[key].fadeOut();
+        }
+    };
+
+    var hideOverlay = function () {
+        popUp.overlay.fadeOut();
+    };
+
+    var hideAll = function () {
+        hidePopUps();
+        hideOverlay();
+    };
+
+    var preparation = function () {
+        popUp.overlay.fadeIn('slow');
+    };
+
+    var bindSettings = function () {
+        closeBtns.on('click' ,hideAll);
+
+        submitBtns.on('click', function (e) {
+            //e.preventDefault();
+        });
+
+    };
+
+    return function () {
+        bindSettings();
+
+        return {
+            showRegistrationForm: function(){
+                preparation();
+                popUp.registrationForm.fadeIn('slow');
+                return popUp.registrationForm;
+            },
+            showLoginForm: function(){
+                preparation();
+                popUp.loginForm.fadeIn('slow');
+                return popUp.loginForm;
+            },
+            showReviewForm: function(){
+                preparation();
+                popUp.reviewForm.fadeIn('slow');
+                return popUp.reviewForm;
+            },
+            showFeedbackForm: function(){
+                preparation();
+                popUp.feedbackForm.fadeIn('slow');
+                return popUp.feedbackForm;
+            },
+            showCallbackForm: function(title){
+                preparation();
+                //openServicePopUp(title);
+                popUp.callbackForm.fadeIn('slow');
+                return popUp.callbackForm;
+            },
+            showServiceForm: function(){
+                preparation();
+                popUp.serviceForm.fadeIn('slow');
+                return popUp.serviceForm;
+            }
+        };
+    }();
+}
 
 
 function selectionRadioBtnsClick(){
@@ -176,44 +304,15 @@ function customInputFile(){
             var that = $(this);
             that.find("input[type='file']").change(function () {
                 var file = $(this).val().replace(/\\/g, "/").split("/").pop();
-                that.find(".custom-input-file__text").css('display','block').text(file);
+                var textField = that.find(".custom-input-file__text");
+                if(textField.attr("value")){
+                    textField.val(file);
+                }else{
+                    textField.text(file);
+                }
             });
         });
     }
-}
-
-function popUpsInit(){
-    $(".header-top-links__signin").click(function (e) {
-        var popup = $(".login-popup"),
-            form = popup.find(".popup-wrap"),
-            closeBtn = popup.find(".popup-close");
-
-        $("body").addClass("scroll_disable");
-        popup.show().css({"top": $(window).scrollTop()});
-        form.css({"top": (($(window).height() - form.height())/2) });
-        closeBtn.click(function () {
-            popup.hide();
-            $("body").removeClass("scroll_disable");
-        });
-
-        e.preventDefault();
-    });
-
-    $(".get__offer").click(function (e) {
-        var popup = $(".login-offer"),
-            form = popup.find(".popup-wrap"),
-            closeBtn = popup.find(".popup-close");
-
-        $("body").addClass("scroll_disable");
-        popup.show().css({"top": $(window).scrollTop()});
-        form.css({"top": (($(window).height() - form.height())/2) });
-        closeBtn.click(function () {
-            popup.hide();
-            $("body").removeClass("scroll_disable");
-        });
-
-        e.preventDefault();
-    });
 }
 
 function switcher(callback){
@@ -234,6 +333,11 @@ function findParent(el,class_){
         return findParent(parent,class_);
     }
 }
+
+
+
+
+
 
 //sliders ****************************************************
 $('.sliderBrand').slick({
