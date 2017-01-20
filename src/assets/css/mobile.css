@@ -65,6 +65,10 @@
         display: none;
     }
 
+    .mobile-block {
+        display: block;
+    }
+
     .block {
         padding-bottom: 42px;
     }
@@ -273,10 +277,6 @@
     /* - - - - - - - - - - - - - content - - - - - - - - - - - -*/
     .content-head {
         margin-top: 28px;
-    }
-
-    .advantages {
-        display: none;
     }
 
     .slider-wrap {
@@ -1305,6 +1305,71 @@
         float: none;
     }
 
+    /* - - - - - - - - - - - - - oshipovka - - - - - - - - - - - -*/
+    .sewing-category {
+        width: 100%;
+        margin-bottom: 28px;
+        height: auto;
+    }
+
+    .sewing-category__image img, .sewing__portfolio-item-image img {
+        height: auto;
+    }
+
+    .sewing-categories {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 0;
+    }
+
+    .advantages__el {
+        width: 100%;
+    }
+
+    .sewing-advantages {
+        border: none;
+    }
+
+    .sewing__portfolio-item {
+        width: 100%;
+        height: auto;
+    }
+
+    .sewing__portfolio-item:hover .sewing__portfolio-item-hover {
+        max-height: none;
+    }
+
+
+
+    /* - - - - - - - - - - - - - orders - - - - - - - - - - - -*/
+    .orders .orders__table-titles.mobile-block {
+        display: block;
+        box-shadow: none;
+    }
+
+    .order__item-more-link {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .order__actions {
+        border: 2px solid #ffc301;
+        padding: 17px 20px 30px;
+        margin-right: 0;
+    }
+
+    .order__actions-btns {
+        min-width: 0;
+    }
+
+    .order__actions-btns .btn__wrap {
+        margin-bottom: 7px;
+    }
+
+    .orders__group-title {
+        border-top: 1px solid #cccccc;
+        padding-top: 30px;
+    }
+
     /* - - - - - - - - - - - - - comment - - - - - - - - - - - -*/
     .reviewMore {
         padding-right: 0;
@@ -1443,6 +1508,133 @@
     .user-form__content {
         padding: 25px 20px;
     }
+
+    /* - - - - - - - - - - - - - order-form - - - - - - - - - - - -*/
+    .user-form.registration-form {
+        border: solid 1px #ccc
+    }
+
+    .user-form.registration-form .user-form__title {
+        border-bottom: solid 1px #ccc;
+        border-image: none;
+        background-color: #f2f2f2;
+        text-transform: uppercase;
+    }
+
+    .user-form.registration-form .field__wrap .field__label-for-pass:nth-child(odd) {
+        float: none;
+    }
+
+    .user-form.registration-form .field__label-for-pass {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .user-form.registration-form .field__wrap {
+        margin-bottom: 16px;
+    }
+
+    .user-form.registration-form .add_phone-to-field {
+        border-radius: 40px;
+    }
+
+    /* - - - - - - - - - - - - - tire-partners - - - - - - - - - - - -*/
+    .tire__partner-image {
+        width: 100%;
+        float: none;
+    }
+
+    .tire__partner-image img {
+        width: 100%;
+    }
+
+    .tire__partner-info .service__contacts .service__contacts-item:last-child {
+        border-right: none;
+    }
+
+    .tire__partner-price-btn-wrap {
+        float: none;
+        text-align: center;
+    }
+
+    .tire__partner-price-btn {
+        display: inline-block;
+    }
+
+    body .tire__service-banner {
+        /*line-height: .8;*/
+        /*color: #fff;*/
+        /*text-align: center;*/
+        margin-bottom: 0;
+    }
+
+    .tire__service-banner-left {
+        width: 100%;
+        font-size: 1rem;
+        height: 40px;
+        line-height: 40px;
+        padding: 0;
+    }
+
+    .tire__service-banner-right {
+        width: 100%;
+        font-size: 0.875rem;
+        height: 40px;
+        line-height: 40px;
+        padding: 0;
+    }
+
+    .seo-text.desktop-none .title {
+        position: relative;
+    }
+
+    .seo-text.desktop-none .title::before {
+        position: absolute;
+        content: "";
+        border-top: 1px solid #ccc;
+        width: 100%;
+        top: -30px;
+    }
+
+    /* - - - - - - - - - - - - - vopros - - - - - - - - - - - -*/
+    .question__text {
+        font-size: .875rem;
+    }
+
+    .question-answer {
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .questions__btn, .questions__btn-inner {
+        float: left;
+    }
+
+    .main-content {
+        margin-bottom: 30px;
+    }
+
+    /* - - - - - - - - - - - - - article inside - - - - - - - - - - - -*/
+    .sidebar .newsItem {
+        border: none;
+    }
+
+    .sidebar .container {
+        margin-top: 30px;
+        border-top: 1px solid #ccc;
+        padding-top: 20px;
+    }
+
+    .newsItemImage {
+        max-height: none;
+    }
+
+    /* - - - - - - - - - - - - - popups - - - - - - - - - - - -*/
+    .popup {
+        width: auto;
+        max-width: 350px;
+    }
+
 
     /* - - - - - - - - - - - - - payLine - - - - - - - - - - - -*/
     .payLine img {
@@ -1644,7 +1836,8 @@
 
     .btn_red_theme.btnMain, .btn_red_theme.btnSiteMap,
     .btn_red_theme.btnMain .btn, .btn_red_theme.btnSiteMap .btn,
-    .btn_red_theme.btnComments, .btn_red_theme.btnComments .btn {
+    .btn_red_theme.btnComments, .btn_red_theme.btnComments .btn,
+    .submit__btn-wrap .btn_red_theme, .submit__btn-wrap .btn_red_theme .btn {
         border-radius: 40px;
     }
 
