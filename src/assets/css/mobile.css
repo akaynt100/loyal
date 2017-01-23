@@ -57,6 +57,11 @@
         flex-wrap: wrap;
     }
 
+    .mobile-flex-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .logo-mobile, .desktop-none {
         display: block;
     }
@@ -1279,6 +1284,102 @@
         bottom: 8px;
     }
 
+    .sort {
+        margin: 40px 0;
+    }
+
+    .catalog__el-options, .catalog__el-addition .catalog__el-preferences,
+    .catalog__el-addition .count__form, .catalog__el-addition .addition__info-stock,
+    .catalog__el-addition .product__price-old {
+        display: none;
+    }
+
+    .catalog-list-type__el  {
+        position: relative;
+        border-width: 1px;
+    }
+
+    .catalog-list-type .catalog__el{
+        margin-top: 0;
+        padding: 15px 16px;
+        min-width: 278px;
+    }
+
+    .catalog-list-type .catalog__options-title {
+        font-size: 0.875rem;
+    }
+
+    .catalog-list-type .product__image {
+        width: 25%;
+        height: auto;
+        margin-left: 20px;
+        margin-top: 3px;
+        margin-bottom: 30px;
+    }
+
+    .catalog-list-type .product__image img {
+        height: auto;
+    }
+
+    .catalog-list-type .product__marks {
+        top: 43px;
+    }
+
+    .catalog-list-type .catalog__el-options-wrap {
+        position: absolute;
+        width: auto;
+        left: 45%;
+        top: 28px;
+    }
+
+    .catalog-list-type .product__price {
+        width: auto;
+    }
+
+    .catalog-list-type .product__price-wrap {
+        position: absolute;
+        width: 140px;
+        left: 43%;
+        top: 64px;
+    }
+
+    .catalog-list-type .season_mark_summer::before, .catalog-list-type .season_mark_winter::before {
+        top: 9px;
+        right: 22px;
+    }
+
+    .catalog-list-type .product__price-before-discount {
+        width: auto;
+    }
+
+    .catalog-list-type .catalog__el-count-cart {
+        position: absolute;
+        top: 90px;
+        left: 40%;
+    }
+
+    .catalog-list-type .catalog__el-addition-info {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        width: 60px;
+        bottom: 50px;
+        left: 20px;
+    }
+
+    .catalog-list-type .addition__info-btn:not(:first-child) {
+        margin-left: 27%;
+    }
+
+    .catalog-list-type .product__manufacturer {
+        min-width: 40%;
+        margin-right: 23px;
+    }
+
+    .catalog-list-type .catalog__el-addition {
+        padding: 0;
+    }
+
     /* - - - - - - - - - - - - - last__visited - - - - - - - - - - - -*/
     .last__visited-item {
         margin-right: 5px;
@@ -1494,6 +1595,65 @@
     .alloyWheels {
         margin-left: 0;
     }
+
+    /* - - - - - - - - - - - - - categories - - - - - - - - - - - -*/
+    .catalog-grid-inner-page {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .mobile-flex-reverse .sidebar {
+        width: 100%;
+    }
+
+    .aside-filter.aside__el {
+        position: relative;
+    }
+
+    .aside-filter-tab-auto {
+        position: absolute;
+        bottom: -48px;
+    }
+
+    .aside-filter-tab {
+        width: 100%;
+        padding: 18px 2px;
+    }
+
+    .transcript.aside__el {
+        margin-top: 113px;
+        margin-bottom: 24px;
+    }
+
+    .aside-filter-tab-params.aside-filter-tab-active {
+        border-bottom: 1px solid #585e61;
+    }
+
+    .aside-filter-tab-auto.aside-filter-tab-active {
+        border-top: 1px solid #585e61;
+    }
+
+    .aside-tire__params, .aside-tire__params-profile, .aside-tire__params-diameter {
+        width: 25%;
+    }
+
+    .aside-filter-tab-content .tire__params-width::after {
+        right: -22px;
+    }
+
+    .display_none {
+        display: none!important;
+    }
+
+    .transcript__title:hover {
+        cursor: pointer;
+    }
+
+    .catalog__el {
+        border-width: 1px;
+    }
+
+
 
     /* - - - - - - - - - - - - - order-form - - - - - - - - - - - -*/
     .user-form {
@@ -1837,7 +1997,8 @@
     .btn_red_theme.btnMain, .btn_red_theme.btnSiteMap,
     .btn_red_theme.btnMain .btn, .btn_red_theme.btnSiteMap .btn,
     .btn_red_theme.btnComments, .btn_red_theme.btnComments .btn,
-    .submit__btn-wrap .btn_red_theme, .submit__btn-wrap .btn_red_theme .btn {
+    .submit__btn-wrap .btn_red_theme, .submit__btn-wrap .btn_red_theme .btn,
+    .catalog-list-type__el .btn_red_theme, .catalog-list-type__el .btn {
         border-radius: 40px;
     }
 

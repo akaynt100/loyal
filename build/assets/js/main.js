@@ -394,6 +394,45 @@ $(window).width(function(){
             nextArrow: '<div class="rightCatalogArrow"><img src="assets/images/scroll-arrow-right.png"></div>',
             prevArrow: '<div class="leftCatalogArrow"><img src="assets/images/scroll-arrow-left.png"></div>'
         });
+
+        function toggleTranscript () {
+            var el = $(".transcript__content");
+            if (el.height() > 0) {
+                el.slideUp(0);
+            }
+
+            $(".transcript__title").on("click",function () {
+                el.slideToggle(500);
+            });
+        }
+
+        toggleTranscript();
+
+        function toggleTabs() {
+            //$('.aside-filter-tab-content.selection-tabs-content-inner').css({'display':'none'});
+
+            //$(".aside-filter-tab-params").on("click",function () {
+            //    $("[data-tab-content='1']").toggleClass("display_none");
+            //});
+            //
+            //$(".aside-filter-tab-auto").on("click",function () {
+            //    $("[data-tab-content='2']").toggleClass("display_none");
+            //});
+
+            $('.aside-filter-tab-content.selection-tabs-content-inner').css({'display':'none!important'});
+            //
+            $(".aside-filter-tab-params").on("click",function () {
+                $("[data-tab-content='1']").slideToggle(500);
+            });
+
+            $(".aside-filter-tab-auto").on("click",function () {
+                $("[data-tab-content='2']").slideToggle(500);
+            });
+        }
+
+        toggleTabs();
+
+
     } else {
         $('.mobile-slider').unslick();
         $('.reviewMoreImage').unslick();
