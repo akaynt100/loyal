@@ -162,7 +162,8 @@ gulp.task('browser-sync', function() {
         //index: 'loyal_new article inside.html'
         //index: 'categories.html'
         //index: 'catalog-2.html'
-        index: 'catalog-1.html'
+        //index: 'catalog-1.html'
+        index: 'compare.html'
 
     });
 });

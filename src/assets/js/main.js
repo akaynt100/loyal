@@ -432,6 +432,12 @@ $(window).width(function(){
 
         toggleTabs();
 
+        $(".compare-table-wrap").mCustomScrollbar({
+            axis:"x",
+            scrollButtons:{enable:false},
+            advanced:{autoExpandHorizontalScroll:true}
+        });
+
 
     } else {
         $('.mobile-slider').unslick();

@@ -1653,8 +1653,6 @@
         border-width: 1px;
     }
 
-
-
     /* - - - - - - - - - - - - - order-form - - - - - - - - - - - -*/
     .user-form {
         width: 100%;
@@ -1883,6 +1881,100 @@
     .text-content .phone-banner {
         margin-bottom: -10px;
         margin-top: -30px;
+    }
+
+    /* - - - - - - - - - - - - - compare - - - - - - - - - - - -*/
+    .compare-table {
+        width: 825px;
+        /*width: 100%;*/
+    }
+
+    .compare-table td {
+        padding: 11px 6px 15px 11px;
+        vertical-align: middle;
+
+    }
+
+    .compare-table td:first-of-type {
+        width: 80px;
+        padding-left: 0;
+        vertical-align: top;
+
+    }
+    .compare-table td:nth-of-type(2) {
+        width: 145px;
+
+    }
+
+    .compare-product {
+        width: auto;
+    }
+
+    .compare-product__image {
+        width: 80px;
+        height: 80px;
+        border: none;
+    }
+
+    .compare-product__image-inner {
+        vertical-align: top;
+    }
+
+    .compare-product__close {
+        top: -10px;
+        right: -10px;
+    }
+
+    .compare-table tr:not(:first-of-type):not(:last-of-type) {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .compare-table tr:not(:first-of-type) {
+        font-size: 0.75rem;
+    }
+
+    .compare-table td:not(:last-of-type) {
+        border-right: 1px solid #ccc;
+    }
+
+    .compare-table tr:first-of-type td {
+        border-right: none;
+        text-align: center;
+    }
+
+    .compare-product__title {
+        font-size: .625rem;
+        color: #3798cb;
+        margin: 15px 0 0;
+    }
+
+    .compare-product__price {
+        font-family: 'OpenSans-Bold', sans-serif;
+        font-size: 0.75rem;
+        color: #1b1b1b;
+    }
+
+    .compare-btn-reset.btn {
+        padding: 8px 10px 8px 25px;
+        background-position: 10px 55%;
+        min-height: 25px;
+    }
+
+    /************************* Перебиваем стили mCustomScrollbar *************************/
+
+    .compare-table-wrap .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail{
+        height: 10px;
+        background: #dbdbdb;
+    }
+    .compare-table-wrap .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{
+        height: 10px;
+        /*border: 2px solid #3798cb;*/
+        background: #b3b3b3;
+        margin: 7px auto;
+    }
+
+    .compare-table-wrap .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+        margin-bottom: 5px;
     }
 
     /* - - - - - - - - - - - - - news - - - - - - - - - - - -*/
