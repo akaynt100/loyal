@@ -98,6 +98,10 @@
     width: auto;
 }
 
+.rel{
+    position: relative;
+}
+
 .gray_theme{
     background-color: #f2f2f2;
 }

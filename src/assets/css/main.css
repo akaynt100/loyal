@@ -2211,6 +2211,74 @@ body{width: 100%;}
     border-color: transparent;
 }
 
+
+.catalog-additional{
+    position: absolute;
+    top: -83px;
+    right: 0;
+}
+.catalog-switcher__btn{
+    width: 30px;
+    height: 30px;
+    float: left;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.catalog-switcher .catalog-switcher__btn:last-child{
+    margin-right: 0;
+}
+.catalog-switcher__btn-grid{
+    background: url("../images/catalog-grid-icon.png") no-repeat;
+    background-position: center 100%;
+}
+.catalog-switcher__btn-list{
+    background: url("../images/catalog-list-icon.png") no-repeat;
+    background-position: center 100%;
+}
+.catalog-switcher__btn-active{
+    background-position: center 0;
+}
+
+.catalog-sorting{
+    font-family: OpenSans-Regular;
+    font-size: 0.875rem;
+    color: #636363;
+    position: relative;
+    margin-right: 20px;
+}
+.catalog-sorting__selected{
+    padding-right: 16px;
+    background: url("../images/sort-drop-arrow.png") no-repeat 97.7% center;
+    cursor: pointer;
+}
+.catalog-sorting__dropdown{
+    position: absolute;
+    right: 4px;
+    top: 15px;
+    padding: 15px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:    0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    box-shadow:         0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.catalog-sorting:hover .catalog-sorting__dropdown,
+.catalog-sorting__dropdown:hover{
+    display: block;
+}
+.catalog-sorting__item{
+    display: block;
+    padding:0 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.catalog-sorting__dropdown .catalog-sorting__item:last-child{
+    margin-bottom: 0;
+}
+.catalog-sorting__item-selected{
+    background: url("../images/sort-dropdown-check.png") no-repeat left center;
+}
+
 /************************* washing *************************/
 .service{
     padding-bottom: 25px;
