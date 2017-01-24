@@ -2709,6 +2709,7 @@ body .tire__service-banner{
 }
 .product__card-price-wrap{
     padding: 0;
+    min-width: 175px;
 }
 .product__card-price-wrap .product__price,
 .product__card-price-wrap .product__price-old{
@@ -2723,7 +2724,7 @@ body .tire__service-banner{
     font-size: 1rem;
 }
 .product__card-price-wrap .product__price-final .product__price{
-    margin-right: 61px;
+    /*margin-right: 61px;*/
 }
 .product__card-price-wrap .product__price-before-discount+.product__price-final{
     padding-top: 18px;
