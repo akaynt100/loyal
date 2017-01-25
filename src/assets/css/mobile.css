@@ -37,12 +37,20 @@
         flex-direction: column;
     }
 
+    .flex-mobile-end {
+        justify-content: flex-end;
+    }
+
     .mobile-fl_r {
         float: right;
     }
 
     .mobile-fl_e {
         align-items: flex-end;
+    }
+
+    .mobile-fl_around {
+        justify-content: space-around;
     }
 
     .mobile-fl_l {
@@ -79,7 +87,7 @@
     }
 
     .m-b_zero {
-        margin-bottom: 0;
+        margin-bottom: 0!important;
     }
 
     .mobile-bold {
@@ -88,6 +96,10 @@
 
     .m_border-bottom {
         border-bottom: 1px solid #cccccc;
+    }
+
+    .m_border-none {
+        border: none!important;
     }
 
     .seo-text.mobile-theme_gray {
@@ -99,9 +111,15 @@
         font-size: 1.25rem;
     }
 
-    .seo-text.block.desktop-none {
-        padding-top: 30px;
+    .seo-text.block {
+        padding-top: 0;
     }
+
+    .seo-text-none + .seo-text{
+        display: none;
+    }
+
+
 
     /* - - - - - - - - - - - - - header - - - - - - - - - - - -*/
     .header__top {
@@ -143,7 +161,7 @@
         display: inline-block;
         clear: both;
         font-size: 1rem;
-        font-family: OpenSans-Bold;
+        font-family: 'OpenSans-Bold', sans-serif;
         text-align: center;
         color: #000;
     }
@@ -322,6 +340,11 @@
         text-align: left;
         line-height: 1.1875rem;
         min-height: 72px;
+    }
+
+    .selection-tabs__el {
+        display: flex;
+        align-items: center;
     }
 
     .selection-tabs__el img {
@@ -520,7 +543,7 @@
 
     .product__title:last-of-type {
         font-size: 1rem;
-        font-family: "OpenSans-Bold";
+        font-family: 'OpenSans-Bold', sans-serif;
         color: #3798cb;
     }
 
@@ -821,6 +844,7 @@
         height: auto;
         padding-bottom: 15px;
         margin-left: 0;
+        min-height: 97px;
     }
 
     .articlesItemContent {
@@ -843,7 +867,8 @@
         margin-left: 0;
     }
 
-    .articlesPagination {
+    .news .articlesPagination {
+        margin-top: 40px;
         margin-bottom: 17px;
     }
 
@@ -904,6 +929,10 @@
 
     .product__images .product__categories {
         margin-top: 0;
+    }
+
+    .product__categories:hover .product__euro-card {
+        display: none;
     }
 
     .product__char-table-el {
@@ -1276,16 +1305,8 @@
         width: 100%;
     }
 
-    .catalog__el_grid-full-width:nth-of-type(2) {
-        margin-bottom: 0;
-    }
-
     .catalog__el-title-wrap {
         bottom: 8px;
-    }
-
-    .sort {
-        margin: 40px 0;
     }
 
     .catalog__el-options, .catalog__el-addition .catalog__el-preferences,
@@ -1323,6 +1344,10 @@
 
     .catalog-list-type .product__marks {
         top: 43px;
+    }
+
+    .product__marks {
+        left: 0;
     }
 
     .catalog-list-type .catalog__el-options-wrap {
@@ -1380,6 +1405,26 @@
         padding: 0;
     }
 
+    .catalog-additional {
+        position: static;
+    }
+
+    .sort {
+        margin: 60px 0 20px;
+    }
+
+    .catalog-switcher {
+        display: none;
+    }
+
+    .catalog-sorting {
+        margin-right: 0;
+    }
+
+    .catalog-sorting__dropdown {
+        z-index: 100;
+    }
+
     /* - - - - - - - - - - - - - last__visited - - - - - - - - - - - -*/
     .last__visited-item {
         margin-right: 5px;
@@ -1402,8 +1447,111 @@
 
     .keeping__principles-item-desc {
         width: auto;
-        /*float: left;*/
         float: none;
+    }
+
+    /* - - - - - - - - - - - - - contacts - - - - - - - - - - - -*/
+    .sign-up {
+        margin-top: 35px;
+        background-color: #3798cb;
+    }
+
+    .sign-up__anchor {
+        font-family: 'OpenSans-Bold', sans-serif;
+        font-size: 0.75rem;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: block;
+        padding: 17px 36px;
+        line-height: 1.25rem;
+    }
+
+    .sign-up__anchor:hover {
+        color: #fff;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    .product__sizes-type {
+        font-family: 'OpenSans-Bold', sans-serif;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #2e3639;
+        color: #fff;
+    }
+
+    .product__sizes-type[data-tab="2"] {
+        background-color: #515e63;
+    }
+
+    .product__sizes-type[data-tab="3"] {
+        background-color: #72858c;
+    }
+
+    .product__tab-content>* {
+        margin-bottom: 0;
+    }
+
+    .product__tab-content-inner {
+        background: url(../images/aside-filter-bg-1.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .contacts__content {
+        padding: 28px 4px 40px 10px;
+        position: static;
+        background: transparent;
+        color: #fff;
+        width: auto;
+    }
+
+    .contacts__title {
+        font-family: 'OpenSans-Bold', sans-serif;
+        font-size: 1.125rem;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .contacts__address, .contacts span {
+        color: #fff;
+    }
+
+    .contacts__services {
+        margin-top: 16px;
+        padding-right: 10px;
+    }
+
+    .contacts__services-image {
+        justify-content: flex-start;
+    }
+
+    .contacts__services-image img {
+        margin-right: 9px;
+        margin-top: 12px;
+    }
+
+    .product__sizes-type-active {
+        border-radius: 0;
+    }
+
+    .user-form.callback-form {
+        border: 1px solid #ccc;
+    }
+
+    .user-form.callback-form .user-form__title {
+        text-transform: uppercase;
+        border-bottom: 1px solid #ccc;
+        border-image: none;
+        background-color: #f2f2f2;
+    }
+
+    .user-form.callback-form .field__label-sm {
+        width: 100%;
+        margin-bottom: 15px;
     }
 
     /* - - - - - - - - - - - - - oshipovka - - - - - - - - - - - -*/
@@ -1438,8 +1586,6 @@
     .sewing__portfolio-item:hover .sewing__portfolio-item-hover {
         max-height: none;
     }
-
-
 
     /* - - - - - - - - - - - - - orders - - - - - - - - - - - -*/
     .orders .orders__table-titles.mobile-block {
@@ -1602,6 +1748,10 @@
         margin-left: 0;
     }
 
+    .sort + .catalog-grid-inner-page {
+        margin-top: -21px;
+    }
+
     .mobile-flex-reverse .sidebar {
         width: 100%;
     }
@@ -1720,10 +1870,11 @@
     }
 
     body .tire__service-banner {
-        /*line-height: .8;*/
-        /*color: #fff;*/
-        /*text-align: center;*/
         margin-bottom: 0;
+    }
+
+    .questions {
+        padding-bottom: 20px;
     }
 
     .tire__service-banner-left {
@@ -1742,11 +1893,11 @@
         padding: 0;
     }
 
-    .seo-text.desktop-none .title {
+    .main-content.b_0 + .seo-text.desktop-none .title {
         position: relative;
     }
 
-    .seo-text.desktop-none .title::before {
+    .main-content.b_0 + .seo-text.desktop-none .title::before {
         position: absolute;
         content: "";
         border-top: 1px solid #ccc;
@@ -1831,10 +1982,8 @@
         font-size: .74rem;
         line-height: 0.875rem;
         padding: 3px;
-    }
-
-    .shipping label:nth-of-type(2) {
-        line-height: 1.9375rem;
+        display: table-cell;
+        vertical-align: middle;
     }
 
     .onlineShippingContent {
@@ -1880,13 +2029,12 @@
     /* - - - - - - - - - - - - - opt-sales - - - - - - - - - - - -*/
     .text-content .phone-banner {
         margin-bottom: -10px;
-        margin-top: -30px;
+        margin-top: -20px;
     }
 
     /* - - - - - - - - - - - - - compare - - - - - - - - - - - -*/
     .compare-table {
         width: 825px;
-        /*width: 100%;*/
     }
 
     .compare-table td {
@@ -1952,6 +2100,10 @@
         font-family: 'OpenSans-Bold', sans-serif;
         font-size: 0.75rem;
         color: #1b1b1b;
+    }
+
+    .compare-btn-reset-wrap {
+        display: none;
     }
 
     .compare-btn-reset.btn {
@@ -2113,6 +2265,10 @@
 
     .main-content + .seo-text .title {
         font-size: 1.25rem;
+    }
+
+    .last-visited + .seo-text {
+        padding-top: 40px;
     }
 
     /* - - - - - - - - - - - - - footer - - - - - - - - - - - -*/

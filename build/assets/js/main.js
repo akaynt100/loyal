@@ -408,9 +408,9 @@ $(window).width(function(){
 
         toggleTranscript();
 
-        function toggleTabs() {
+        //function toggleTabs() {
             //$('.aside-filter-tab-content.selection-tabs-content-inner').css({'display':'none'});
-
+            //
             //$(".aside-filter-tab-params").on("click",function () {
             //    $("[data-tab-content='1']").toggleClass("display_none");
             //});
@@ -419,18 +419,21 @@ $(window).width(function(){
             //    $("[data-tab-content='2']").toggleClass("display_none");
             //});
 
-            $('.aside-filter-tab-content.selection-tabs-content-inner').css({'display':'none!important'});
+            /////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //$('.aside-filter-tab-content.selection-tabs-content-inner').css({'display':'none!important'});
             //
-            $(".aside-filter-tab-params").on("click",function () {
-                $("[data-tab-content='1']").slideToggle(500);
-            });
+            //
+            //$(".aside-filter-tab-params").on("click",function () {
+            //    $("[data-tab-content='1']").slideToggle(500);
+            //});
+            //
+            //$(".aside-filter-tab-auto").on("click",function () {
+            //    $("[data-tab-content='2']").slideToggle(500);
+            //});
+        //}
 
-            $(".aside-filter-tab-auto").on("click",function () {
-                $("[data-tab-content='2']").slideToggle(500);
-            });
-        }
-
-        toggleTabs();
+        //toggleTabs();
 
         $(".compare-table-wrap").mCustomScrollbar({
             axis:"x",
@@ -438,20 +441,19 @@ $(window).width(function(){
             advanced:{autoExpandHorizontalScroll:true}
         });
 
+        function sliderTabWidth () {
+            var minWidth = document.querySelectorAll(".tabs__content-el")[0].offsetWidth;
+            var elements = document.querySelectorAll('.tabs__content-el .catalog__el');
+
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].style.minWidth = minWidth + "px";
+            }
+        }
+
+        sliderTabWidth();
 
     } else {
         $('.mobile-slider').unslick();
         $('.reviewMoreImage').unslick();
     }
 });
-
-// ***** remove this *****************************
-//$('.mobile-slider').slick({
-//    arrows: true,
-//    slidesToShow: 1,
-//    slidesToScroll: 1,
-//    draggable: true,
-//    nextArrow: '<div class="rightCatalogArrow"><img src="assets/images/scroll-arrow-right.png"></div>',
-//    prevArrow: '<div class="leftCatalogArrow"><img src="assets/images/scroll-arrow-left.png"></div>'
-//});
-//**********************************************
