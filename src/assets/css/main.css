@@ -3748,7 +3748,64 @@ label.custom-checkbox input[type=checkbox]:checked + .checkbox__replacer{
     margin-bottom: 25px;
 }
 
+/************************* services *************************/
 
+.service__el-image,
+.category__el-hover-inner,
+.services__el.catalog__el_grid-full-width:hover .category__el-hover,
+.service__el-image img{
+    height: 240px;
+}
+.service__el-image img {
+    width: 100%;
+}
+.services__el-title{
+    font-family: OpenSans-Bold;
+    font-size: 1.125rem;
+    color: #1b1b1b;
+    text-align: center;
+    padding: 18px 10px;
+    background-color: #f0f0f0;
+    line-height: 1;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.services__el:hover .services__el-title{
+    color: #3798cb;
+}
+.services__el.catalog__el_grid-full-width{
+    height: 240px;
+    min-height: 240px;
+}
+
+/************************* sitemap *************************/
+
+.sitemap{
+    font-family: OpenSans-Regular;
+    font-size: 0.875rem;
+}
+.first-level-links-list{
+
+}
+.first-level-link>a{
+    font-family: OpenSans-Bold;
+    color: #1b1b1b;
+}
+.sitemap a{
+    display: block;
+    margin-bottom: 10px;
+}
+.sitemap li{
+    /*margin-bottom: 10px;*/
+}
+.sitemap li ul{
+    margin-left: 12px;
+}
+.sitemap li ul a{
+    color: #636363;
+}
 /************************* Перебиваем стили bx-slider *************************/
 
 .slider-wrap .bx-wrapper{
