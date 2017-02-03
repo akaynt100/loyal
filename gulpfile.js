@@ -156,7 +156,7 @@ gulp.task('browser-sync', function() {
         //index: 'poshiv-peretyajka.html'
         //index: 'registration-form.html'
         //index: 'tire-partners.html'
-        index: 'vopros.html'
+        //index: 'vopros.html'
         //index: 'popups.html'
         //index: 'pokupatelyam.html'
         //index: 'loyal_new article inside.html'
@@ -165,6 +165,8 @@ gulp.task('browser-sync', function() {
         //index: 'catalog-1.html'
         //index: 'compare.html'
         //index: 'contacts.html'
+        index: 'services.html'
+        //index: 'sitemap.html'
 
     });
 });

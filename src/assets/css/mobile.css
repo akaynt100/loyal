@@ -1283,11 +1283,6 @@
 
     .catalog__el_grid-full-width:hover .catalog__el-title {
         color: inherit;
-
-    }
-
-    .catalog__el_grid-full-width:last-of-type {
-        display: none;
     }
 
     .category__el-hover {
@@ -2157,6 +2152,46 @@
 
     .newsItemTitle {
         margin-bottom: 15px;
+    }
+
+    /* - - - - - - - - - - - - - sitemap - - - - - - - - - - - -*/
+    .first-level-link>a {
+        font-family: 'OpenSans-Regular', sans-serif;
+    }
+
+    /* - - - - - - - - - - - - - services - - - - - - - - - - - -*/
+    .catalog__el-mobile {
+        padding: 0;
+        margin-bottom: 5.5%;
+        font-size: 1rem;
+        height: auto;
+        min-height: 0;
+    }
+
+    .catalog__el-mobile .services__el.catalog__el_grid-full-width {
+        height: auto;
+        min-height: 0;
+    }
+
+    .catalog__el-mobile .catalog__el-image, .catalog__el-mobile img,
+    .catalog__el-mobile.services__el.catalog__el_grid-full-width {
+        height: auto;
+        min-height: 0;
+        width: 100%;
+    }
+
+    .catalog__el-mobile img {
+        vertical-align: bottom;
+        min-height: 195px;
+    }
+
+    .catalog__el-mobile .services__el-title {
+        font-size: 1rem;
+        padding: 12px 10px;
+    }
+
+    .services__el:hover .services__el-title {
+        color: #1b1b1b;
     }
 
     /* - - - - - - - - - - - - - comments - - - - - - - - - - - -*/
